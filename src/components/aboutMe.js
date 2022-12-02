@@ -1,7 +1,7 @@
 const AboutMe = ({ darkMode, setDarkMode }) => {
   return (
     <div
-      className={`intro-wrapper d-flex ${
+      className={`segment-wrapper d-flex ${
         darkMode ? "dark-mode" : "light-mode"
       }`}
     >
@@ -38,6 +38,7 @@ const AboutMe = ({ darkMode, setDarkMode }) => {
           </div>
         </div>
       </div>
+      <div className="aboutme-end" id="aboutme-end"></div>
     </div>
   );
 };

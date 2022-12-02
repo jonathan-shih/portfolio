@@ -96,7 +96,7 @@
   color: inherit;
 }
 
-.intro-wrapper {
+.segment-wrapper {
   height: 100vh;
   width: inherit;
 }
@@ -149,8 +149,34 @@
 .nav-bar {
   position: fixed;
   width: 100vw;
-  top: 20px;
   z-index: 1;
   padding-left: 40px;
   padding-right: 40px;
+  padding-top: 20px;
+  transition-timing-function: ease-in;
+  transition: 0.4s;
+}
+
+.nav-bar--hidden, .transparent--hidden{
+  transform: translateY(-150px);
+}
+
+.topbar .transparent {
+  width: 100vw;
+  height: 150px;
+  position: fixed;
+  top:0px;
+  left:0px;
+  backdrop-filter:blur(3px);
+  z-index: 1;
+  transition-timing-function: ease-in;
+  transition: 0.25s;
+}
+
+.light-mode .topbar .transparent {
+  background-color:#ffffff66;
+}
+
+.dark-mode .topbar .transparent {
+  background-color:#12121266;
 }

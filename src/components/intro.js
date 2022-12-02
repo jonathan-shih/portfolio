@@ -1,6 +1,6 @@
 const Intro = ({ darkMode, setDarkMode }) => {
   return (
-    <div className="intro-wrapper d-flex">
+    <div className="segment-wrapper d-flex">
       <div className="intro-div d-flex flex-column">
         <div className="d-flex flex-column align-items-start">
           <h3 className="sub-text"> Hi, my name is </h3>
