@@ -18,21 +18,21 @@
   color: #4eab6d;
 }
 
-.dark-mode {
+.dark-mode, .dark-mode .small-nav {
   background-color: #121212;
   color: white;
   transition-timing-function: ease-in;
   transition: 0.25s;
 }
 
-.light-mode {
+.light-mode, .light-mode .small-nav {
   background-color: #fff;
   color: #231f20;
   transition-timing-function: ease-in;
   transition: 0.25s;
 }
 
-.light-mode .toggleMode{
+.light-mode .toggleMode {
   background-color: #e9e9ea;
 }
 
@@ -179,4 +179,54 @@
 
 .dark-mode .topbar .transparent {
   background-color:#12121266;
+}
+
+.small-nav{
+  position:fixed;
+  height: 100vh;
+  width: 40%;
+  z-index: 3;
+  right: 0px;
+  display:flex;
+  text-align:end;
+  transition-timing-function: ease-in;
+  transition: 0.25s;
+}
+
+
+.small-nav-transparent {
+  position:fixed;
+  width: 100vw;
+  height:100vh;
+  backdrop-filter:blur(3px);
+  z-index: 2;
+  
+}
+.light-mode .small-nav-transparent {
+  background-color:#9e959566;
+}
+.dark-mode .small-nav-transparent{
+  background-color:#9e959566;
+}
+
+.small-nav ul {
+  list-style-type: none;
+}
+
+.small-nav .small-nav-wrapper {
+  margin-top:74px;
+  margin-right: 36px;
+}
+
+.small-nav-wrapper li {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.small-nav--hidden {
+  transform: translateX(300px);
+}
+
+.small-nav-transparent--hidden {
+  transform: translateX(100vw);
 }

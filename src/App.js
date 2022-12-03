@@ -16,13 +16,9 @@ function App() {
   return (
     <div className={darkMode ? "dark-mode" : "light-mode"}>
       <div className="App">
-        <NavigationTopbar
-          darkMode={darkMode}
-          setDarkMode={setDarkMode}
-          ref={abtMe}
-        />
+        <NavigationTopbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <Intro darkMode={darkMode} setDarkMode={setDarkMode} />
-        <AboutMe ref={abtMe} darkMode={darkMode} setDarkMode={setDarkMode} />
+        <AboutMe darkMode={darkMode} setDarkMode={setDarkMode} />
         <BrowserRouter>
           <div className="mainBod"></div>
         </BrowserRouter>
