@@ -101,21 +101,30 @@
   width: inherit;
 }
 
-.intro-div {
+.intro-div, .aboutme-div {
   margin: auto;
   overflow:hidden;
   overflow-wrap: break-word;
   display: inline-block;
 }
 
-@media screen and (min-width: 768px) {
-  .intro-div {
+@media screen and (min-width: 1400px) {
+  .content-wrapper {
     padding-left: 30%;
     padding-right: 30%;
   }
 }
+@media screen and (max-width: 1400px) and (min-width:768px) {
+  .content-wrapper {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  .aboutme-text-div {
+    padding-right: 20px;
+  }
+}
 @media screen and (max-width: 768px) {
-  .intro-div {
+  .content-wrapper {
     padding-left: 10%;
     padding-right: 10%;
   }
@@ -126,7 +135,7 @@
   opacity: 0.7;
 }
 
-.intro-text {
+.intro-text, .aboutme-div{
   text-align:left;
 }
 
@@ -210,7 +219,7 @@
   height: 100vh;
   width: 40%;
   z-index: 3;
-  right: 0px;
+  right: -300px;
   display:flex;
   text-align:end;
   transition-timing-function: ease-in;
@@ -222,6 +231,7 @@
   position:fixed;
   width: 100vw;
   height:100vh;
+  right:-100vw;
   backdrop-filter:blur(3px);
   z-index: 2;
 }
@@ -247,10 +257,27 @@
   padding-bottom: 1em;
 }
 
-.small-nav--hidden {
-  transform: translateX(300px);
+.small-nav--show {
+  transform: translateX(-300px);
 }
 
-.small-nav-transparent--hidden {
-  transform: translateX(100vw);
+.small-nav-transparent--show {
+  transform: translateX(-100vw);
+}
+
+.profile-div {
+  position: relative;
+}
+.profile-img {
+  height: 350px;
+  width: 263px;
+  margin-bottom: 50px;
+}
+
+.profile-highlight {
+  position:absolute;
+  height: 350px;
+  width: 263px;
+  top: 0px;
+  left: 50px;
 }

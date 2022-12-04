@@ -32,17 +32,20 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
 
     setLastScroll(currentScroll);
   };
-
-  const smallNav = document.querySelector(".small-nav");
-  const smallNavTransparent = document.querySelector(".small-nav-transparent");
+  var smallNav = document.querySelector(".small-nav");
+  var smallNavTransparent = document.querySelector(".small-nav-transparent");
+  useEffect(() => {
+    smallNav = document.querySelector(".small-nav");
+    smallNavTransparent = document.querySelector(".small-nav-transparent");
+  }, []);
   const showSmallNav = () => {
-    smallNav.classList.remove("small-nav--hidden");
-    smallNavTransparent.classList.remove("small-nav-transparent--hidden");
+    smallNav.classList.add("small-nav--show");
+    smallNavTransparent.classList.add("small-nav-transparent--show");
   };
 
   const hideSmallNav = () => {
-    smallNav.classList.add("small-nav--hidden");
-    smallNavTransparent.classList.add("small-nav-transparent--hidden");
+    smallNav.classList.remove("small-nav--show");
+    smallNavTransparent.classList.remove("small-nav-transparent--show");
     console.log("hide");
   };
 

@@ -1,10 +1,12 @@
+import profile_img from "../assets/profile_img.jpg";
+
 const AboutMe = ({ darkMode, setDarkMode }) => {
   return (
     <div className={`d-flex ${darkMode ? "dark-mode" : "light-mode"}`}>
-      <div className="intro-div d-flex flex-column">
-        <div className="d-flex flex-column align-items-start">
+      <div className="aboutme-div d-flex flex-column-reverse flex-md-row">
+        <div className="aboutme-text-div d-flex flex-column align-items-start">
           <h3 className="sub-text section-header"> About Me </h3>
-          <h3 className="intro-text">
+          <h3 className="aboutme-text">
             My name is Jonathan Shih and I am currently a Junior studying
             Computer Science and Design at Northeastern University.
           </h3>
@@ -32,6 +34,10 @@ const AboutMe = ({ darkMode, setDarkMode }) => {
               to see the website in dark mode!
             </h4>
           </div>
+        </div>
+        <div className="profile-div">
+          <img src={profile_img} className="profile-img"></img>
+          <div className="profile-highlight" />
         </div>
       </div>
       <div className="aboutme-end" id="aboutme-end"></div>
