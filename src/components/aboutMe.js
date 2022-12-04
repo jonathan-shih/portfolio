@@ -1,10 +1,6 @@
 const AboutMe = ({ darkMode, setDarkMode }) => {
   return (
-    <div
-      className={`segment-wrapper d-flex ${
-        darkMode ? "dark-mode" : "light-mode"
-      }`}
-    >
+    <div className={`d-flex ${darkMode ? "dark-mode" : "light-mode"}`}>
       <div className="intro-div d-flex flex-column">
         <div className="d-flex flex-column align-items-start">
           <h3 className="sub-text section-header"> About Me </h3>

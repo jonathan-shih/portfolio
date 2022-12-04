@@ -14,16 +14,13 @@ function App() {
   const abtMe = useRef(null);
 
   return (
-    <div className={darkMode ? "dark-mode" : "light-mode"}>
-      <div className="App">
-        <NavigationTopbar darkMode={darkMode} setDarkMode={setDarkMode} />
-        <Intro darkMode={darkMode} setDarkMode={setDarkMode} />
-        <AboutMe darkMode={darkMode} setDarkMode={setDarkMode} />
-        <BrowserRouter>
-          <div className="mainBod"></div>
-        </BrowserRouter>
-        <SideBar darkMode={darkMode} />
-      </div>
+    <div className={darkMode ? "dark-mode App" : "light-mode App"}>
+      <NavigationTopbar darkMode={darkMode} setDarkMode={setDarkMode} />
+      <Intro darkMode={darkMode} setDarkMode={setDarkMode} />
+      <AboutMe darkMode={darkMode} setDarkMode={setDarkMode} />
+      <BrowserRouter></BrowserRouter>
+      <div className="segment-wrapper"></div>
+      <SideBar darkMode={darkMode} />
     </div>
   );
 }

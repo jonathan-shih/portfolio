@@ -55,6 +55,7 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
             src={darkMode ? logo_white : logo_black}
             alt="logo"
             className="logo"
+            type="button"
             onClick={() => Scroll.animateScroll.scrollToTop({ duration: 100 })}
           />
         </div>
@@ -63,12 +64,13 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
           className="fa-solid fa-bars d-md-none"
           onClick={() => showSmallNav()}
         ></i>
-        <ul className="nav d-none d-md-flex">
-          <li className="nav-item">
+        <ul className="nav d-none d-md-flex h6">
+          <li className="nav-item" type="button">
             <Link
               to="aboutme-end"
               spy={true}
               smooth={true}
+              offset={-150}
               duration={100}
               className="nav-link"
             >
@@ -77,16 +79,16 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">
-              Link
+              Experience
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">
-              Link
+              Work
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link disabled">Disabled</a>
+            <a className="nav-link">Contact</a>
           </li>
           <li className="nav-item">
             <div className="d-flex align-items-center switch-div">
@@ -105,17 +107,18 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
       </div>
       <div className="small-nav d-md-none flex-column align-items-end">
         <div className="small-nav-wrapper">
-          <ul>
+          <ul className="h5">
             <i
               type="button"
               className="fa-solid fa-xmark"
               onClick={() => hideSmallNav()}
             ></i>
-            <li className="nav-item">
+            <li className="nav-item" type="button">
               <Link
                 to="aboutme-end"
                 spy={true}
                 smooth={true}
+                offset={-150}
                 duration={100}
                 className="nav-link"
               >
@@ -124,16 +127,16 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Link
+                Experience
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Link
+                Work
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled">Disabled</a>
+              <a className="nav-link">Contact</a>
             </li>
             <li className="nav-item">
               <i
