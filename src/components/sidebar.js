@@ -1,4 +1,4 @@
-const SideBar = ({ darkMode }) => {
+const SideBar = () => {
   return (
     <div className="sidebar d-flex flex-column d-none d-md-block">
       <div className="d-flex flex-column socials">

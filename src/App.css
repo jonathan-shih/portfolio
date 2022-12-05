@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   font-family: Calibri;
+  src: url("./assets/Calibri.ttf") format("truetype");
 }
 *::-webkit-scrollbar {
   width: 8px;
