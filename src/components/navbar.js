@@ -7,14 +7,6 @@ import { Link } from "react-scroll";
 
 const NavigationTopbar = ({ darkMode, setDarkMode }) => {
   const [lastScroll, setLastScroll] = useState(0);
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [lastScroll]);
-
   const handleScroll = () => {
     const nav = document.querySelector(".nav-bar");
     const transparent = document.querySelector(".transparent");
@@ -32,6 +24,14 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
 
     setLastScroll(currentScroll);
   };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScroll]);
+
   var smallNav = document.querySelector(".small-nav");
   var smallNavTransparent = document.querySelector(".small-nav-transparent");
   useEffect(() => {
@@ -155,7 +155,10 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
           </ul>
         </div>
       </div>
-      <div className="small-nav-transparent d-md-none"></div>
+      <div
+        className="small-nav-transparent d-md-none"
+        onClick={() => hideSmallNav()}
+      ></div>
     </div>
   );
 };

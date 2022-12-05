@@ -245,7 +245,7 @@
   position:fixed;
   height: 100vh;
   width: 40%;
-  z-index: 3;
+  z-index: 13;
   right: -300px;
   display:flex;
   text-align:end;
@@ -260,7 +260,7 @@
   height:100vh;
   right:-100vw;
   backdrop-filter:blur(3px);
-  z-index: 2;
+  z-index: 12;
 }
 
 .light-mode .small-nav-transparent {
