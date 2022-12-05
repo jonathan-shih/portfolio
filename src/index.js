@@ -1,12 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    {/* Preloading images to prevent lazy loading */}
+    <link rel="preload" as="image" href="./assets/logo_black.png" />
+    <link rel="preload" as="image" href="./assets/white.png" />
+    <link rel="preload" as="image" href="./assets/profile_img.jpg" />
     <App />
   </React.StrictMode>
 );

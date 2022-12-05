@@ -185,7 +185,7 @@
 .nav-bar {
   position: fixed;
   width: 100vw;
-  z-index: 1;
+  z-index: 11;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 20px;
@@ -218,7 +218,7 @@
   top:0px;
   left:0px;
   backdrop-filter:blur(3px);
-  z-index: 1;
+  z-index: 10;
   transition-timing-function: ease-in;
   transition: 0.25s;
 }
