@@ -1,7 +1,20 @@
 .App {
   text-align: center;
   font-family: Calibri;
+}
+
+.name-div {
+  font-family: Calibri-light;
+}
+@font-face {
+  font-family: Calibri;
+  
   src: url("./assets/Calibri.ttf") format("truetype");
+}
+@font-face {
+  font-family: Calibri-light;
+  
+  src: url("./assets/Calibri-light.ttf") format("truetype");
 }
 *::-webkit-scrollbar {
   width: 8px;
@@ -50,8 +63,6 @@
   width: 12px;
   margin-left: 5px;
 }
-
-
 
 .logo {
   width: 100px;
