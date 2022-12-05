@@ -1,46 +1,36 @@
 import profile_img from "../assets/profile_img.jpg";
 
-const AboutMe = ({ darkMode, setDarkMode }) => {
+const AboutMe = () => {
   return (
-    <div className={`d-flex ${darkMode ? "dark-mode" : "light-mode"}`}>
+    <div>
       <div className="aboutme-div d-flex flex-column-reverse flex-md-row">
         <div className="aboutme-text-div d-flex flex-column align-items-start">
           <h3 className="sub-text section-header"> About Me </h3>
-          <h3 className="aboutme-text">
+          <h4 className="aboutme-text">
             My name is Jonathan Shih and I am currently a Junior studying
-            Computer Science and Design at Northeastern University.
-          </h3>
-          <div className={darkMode ? "intro-text sub-text d-flex" : "d-none"}>
-            <h4>
-              ps: click the
-              <i
-                type="text"
-                className="fa-solid fa-sun mode-switch"
-                onClick={() => setDarkMode(!darkMode)}
-              />{" "}
-              to see the website in light mode!
-            </h4>
-          </div>
-          <div className={darkMode ? "d-none" : "intro-text sub-text d-flex"}>
-            <h4>
-              ps: click the
-              {
-                <i
-                  type="text"
-                  className="fa-solid fa-moon mode-switch"
-                  onClick={() => setDarkMode(!darkMode)}
-                />
-              }{" "}
-              to see the website in dark mode!
-            </h4>
-          </div>
+            Computer Science and Design at Northeastern University. I have
+            interests in Software Engineering, Web Developement and UI/UX
+            Design.
+          </h4>
+          <h4 className="aboutme-text">
+            As an interdicipinary student studying computer science and design,
+            I am able to leverage both logical and creative approaches when
+            solving problems. I strive to create clean and cleverly designed
+            code as well as visually appealing interfaces and designs.
+          </h4>
+          <h4 className="aboutme-text">
+            Having lived in Hong Kong, China and the US, I have a disctict
+            cultural perspective that allows me to effectively communicate and
+            floursih in all kinds of environments, making me a great team
+            player. I am adapable and quick learning, and always excited to
+            learn!
+          </h4>
         </div>
         <div className="profile-div">
           <img src={profile_img} className="profile-img"></img>
           <div className="profile-highlight" />
         </div>
       </div>
-      <div className="aboutme-end" id="aboutme-end"></div>
     </div>
   );
 };

@@ -70,7 +70,7 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
         <ul className="nav d-none d-md-flex h6">
           <li className="nav-item" type="button">
             <Link
-              to="aboutme-end"
+              to="aboutme-div"
               spy={true}
               smooth={true}
               offset={-150}
@@ -118,7 +118,7 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
             ></i>
             <li className="nav-item" type="button">
               <Link
-                to="aboutme-end"
+                to="aboutme-div"
                 spy={true}
                 smooth={true}
                 offset={-150}

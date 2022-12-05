@@ -1,7 +1,6 @@
 .App {
   text-align: center;
   font-family: Calibri;
-  height: 100vh;
 }
 *::-webkit-scrollbar {
   width: 8px;
@@ -113,20 +112,32 @@
     padding-left: 30%;
     padding-right: 30%;
   }
+  .aboutme-text-div {
+    padding-right: 20px;
+  }
+  .profile-div {
+    margin-top: 40px;
+  }
 }
 @media screen and (max-width: 1400px) and (min-width:768px) {
   .content-wrapper {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
   }
   .aboutme-text-div {
     padding-right: 20px;
+  }
+  .profile-div {
+    margin-top: 40px;
   }
 }
 @media screen and (max-width: 768px) {
   .content-wrapper {
     padding-left: 10%;
     padding-right: 10%;
+  }
+  .aboutme-text-div {
+    padding-top: 20px;
   }
 }
 
@@ -267,17 +278,36 @@
 
 .profile-div {
   position: relative;
+  overflow: visible;
+  height: 350px;
+  width: 263px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .profile-img {
+  position: relative;
   height: 350px;
   width: 263px;
   margin-bottom: 50px;
+  z-index: 1;
 }
 
 .profile-highlight {
   position:absolute;
   height: 350px;
   width: 263px;
-  top: 0px;
-  left: 50px;
+  top: 10px;
+  left: 10px;
+  border:2px solid #4eab6d;
+  z-index: 0;
+}
+
+.aboutme-div {
+  overflow: visible;
+}
+
+.dark-mode .aboutme-wrapper {
+  background-color: #121212;
+  color: white;
 }
