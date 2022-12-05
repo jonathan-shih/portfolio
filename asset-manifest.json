@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4c7bff81.css",
-    "main.js": "/portfolio/static/js/main.c453c70e.js",
+    "main.css": "/portfolio/static/css/main.cc00193f.css",
+    "main.js": "/portfolio/static/js/main.c6678d69.js",
     "static/js/787.749b4a44.chunk.js": "/portfolio/static/js/787.749b4a44.chunk.js",
     "static/media/profile_img.jpg": "/portfolio/static/media/profile_img.809d0e0801bc6523aa06.jpg",
     "static/media/fa-solid-900.ttf": "/portfolio/static/media/fa-solid-900.b48ad290d0335879a92b.ttf",
+    "static/media/Calibri.ttf": "/portfolio/static/media/Calibri.29c57b05b7345f94042a.ttf",
     "static/media/fa-brands-400.ttf": "/portfolio/static/media/fa-brands-400.f9ee61fab3c11e2f3ed3.ttf",
     "static/media/fa-solid-900.woff2": "/portfolio/static/media/fa-solid-900.66104b766c3d0462b3c5.woff2",
     "static/media/fa-brands-400.woff2": "/portfolio/static/media/fa-brands-400.e1a247a5ef41e1975742.woff2",
@@ -15,12 +16,12 @@
     "static/media/fa-v4compatibility.ttf": "/portfolio/static/media/fa-v4compatibility.f601162ae669f88823a3.ttf",
     "static/media/fa-v4compatibility.woff2": "/portfolio/static/media/fa-v4compatibility.745989aab0d69cab7e70.woff2",
     "index.html": "/portfolio/index.html",
-    "main.4c7bff81.css.map": "/portfolio/static/css/main.4c7bff81.css.map",
-    "main.c453c70e.js.map": "/portfolio/static/js/main.c453c70e.js.map",
+    "main.cc00193f.css.map": "/portfolio/static/css/main.cc00193f.css.map",
+    "main.c6678d69.js.map": "/portfolio/static/js/main.c6678d69.js.map",
     "787.749b4a44.chunk.js.map": "/portfolio/static/js/787.749b4a44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c7bff81.css",
-    "static/js/main.c453c70e.js"
+    "static/css/main.cc00193f.css",
+    "static/js/main.c6678d69.js"
   ]
 }
