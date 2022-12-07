@@ -81,9 +81,16 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
             </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <Link
+              to="experiences-div"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={100}
+              className="nav-link"
+            >
               Experience
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">
@@ -129,9 +136,16 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link
+                to="experiences-div"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={100}
+                className="nav-link"
+              >
                 Experience
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">

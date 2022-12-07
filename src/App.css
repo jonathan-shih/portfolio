@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .App {
   text-align: center;
   font-family: Calibri;
@@ -19,6 +20,11 @@
   src: url("./assets/Calibri-light.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: Calibri-bold;
+  src: url("./assets/calibri-bold.ttf") format("truetype");
+}
+
 @media screen and (min-width: 1600px) {
   .content-wrapper {
     padding-left: 25%;
@@ -29,6 +35,23 @@
   }
   .profile-div {
     margin-top: 40px;
+  }
+  .experiences-div {
+    display: flex;
+  }
+  .experiences-div .company-list-item {
+    border-right: 3px solid #9e959566;
+  }
+  .experiences-div .company-list-item-active {
+    color: #4eab6d;
+    border-right: 3px solid ;
+  }
+  .experiences-div .company-list-item, .company-list-item-active{
+    text-align: right;
+    padding: 2px 20px 2px 0px;
+  }
+  .experiences-div .description {
+    margin-left: 20px;
   }
 }
 
@@ -43,6 +66,23 @@
   .profile-div {
     margin-top: 40px;
   }
+  .experiences-div {
+    display: flex;
+  }
+  .experiences-div .company-list-item {
+    border-right: 3px solid #9e959566;
+  }
+  .experiences-div .company-list-item-active {
+    color: #4eab6d;
+    border-right: 3px solid ;
+  }
+  .experiences-div .company-list-item, .company-list-item-active{
+    text-align: right;
+    padding: 2px 20px 2px 0px;
+  }
+  .experiences-div .description {
+    margin-left: 20px;
+  }
 }
 @media screen and (max-width: 768px) {
   .content-wrapper {
@@ -51,6 +91,23 @@
   }
   .aboutme-text-div {
     padding-top: 20px;
+  }
+  .experiences-div .select{
+    display: flex;
+  }
+  .experiences-div .company-list-item {
+    border-bottom: 3px solid #9e959566;
+  }
+  .experiences-div .company-list-item-active {
+    color: #4eab6d;
+    border-bottom: 3px solid ;
+  }
+  .experiences-div .company-list-item, .company-list-item-active {
+    text-align: right;
+    padding: 0px 10px 0px 10px;
+  }
+  .experiences-div .description {
+    margin-top: 20px;
   }
 }
 
@@ -263,14 +320,11 @@
   z-index: 12;
 }
 
-.light-mode .small-nav-transparent {
-  background-color:#9e959566;
-}
-.dark-mode .small-nav-transparent{
+.light-mode .small-nav-transparent, .dark-mode .small-nav-transparent {
   background-color:#9e959566;
 }
 
-.small-nav ul {
+.small-nav ul, .experiences-div .select li {
   list-style-type: none;
 }
 
@@ -321,9 +375,32 @@
 
 .aboutme-div {
   overflow: visible;
+  padding-bottom: 100px;
+  border-bottom: 0.5px solid;
 }
 
-.dark-mode .aboutme-wrapper {
-  background-color: #121212;
-  color: white;
+.experiences-div {
+  padding-top: 100px;
+}
+
+.experiences-div .select li:hover {
+  color: #4eab6d;
+}
+
+.description .spacer {
+  border-right: 2px solid;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.experiences-div .description {
+  text-align: left;
+}
+
+.description .company-name {
+  font-family: calibri-bold;
+}
+
+.experiences-div .description li {
+  margin-left : -10px;
+  padding-left: 5px;
 }

@@ -8,6 +8,7 @@ import NavigationTopbar from "./components/navbar.js";
 import SideBar from "./components/sidebar";
 import Intro from "./components/intro";
 import AboutMe from "./components/aboutMe";
+import Experiences from "./components/experiences/experiences";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -18,7 +19,7 @@ function App() {
       <div className="content-wrapper">
         <Intro darkMode={darkMode} setDarkMode={setDarkMode} />
         <AboutMe />
-        <BrowserRouter></BrowserRouter>
+        <Experiences />
         <div className="segment-wrapper"></div>
       </div>
       <SideBar />

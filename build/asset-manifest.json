@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.634917e7.css",
-    "main.js": "/portfolio/static/js/main.1f589ca0.js",
+    "main.css": "/portfolio/static/css/main.5b978e9a.css",
+    "main.js": "/portfolio/static/js/main.c5bb5794.js",
     "static/js/787.749b4a44.chunk.js": "/portfolio/static/js/787.749b4a44.chunk.js",
     "static/media/profile_img.jpg": "/portfolio/static/media/profile_img.809d0e0801bc6523aa06.jpg",
+    "static/media/calibri-bold.ttf": "/portfolio/static/media/calibri-bold.d2362af0b37d31196c7c.ttf",
     "static/media/Calibri-light.ttf": "/portfolio/static/media/Calibri-light.bfc9611cc594de9eda6b.ttf",
     "static/media/fa-solid-900.ttf": "/portfolio/static/media/fa-solid-900.b48ad290d0335879a92b.ttf",
     "static/media/Calibri.ttf": "/portfolio/static/media/Calibri.29c57b05b7345f94042a.ttf",
@@ -17,12 +18,12 @@
     "static/media/fa-v4compatibility.ttf": "/portfolio/static/media/fa-v4compatibility.f601162ae669f88823a3.ttf",
     "static/media/fa-v4compatibility.woff2": "/portfolio/static/media/fa-v4compatibility.745989aab0d69cab7e70.woff2",
     "index.html": "/portfolio/index.html",
-    "main.634917e7.css.map": "/portfolio/static/css/main.634917e7.css.map",
-    "main.1f589ca0.js.map": "/portfolio/static/js/main.1f589ca0.js.map",
+    "main.5b978e9a.css.map": "/portfolio/static/css/main.5b978e9a.css.map",
+    "main.c5bb5794.js.map": "/portfolio/static/js/main.c5bb5794.js.map",
     "787.749b4a44.chunk.js.map": "/portfolio/static/js/787.749b4a44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.634917e7.css",
-    "static/js/main.1f589ca0.js"
+    "static/css/main.5b978e9a.css",
+    "static/js/main.c5bb5794.js"
   ]
 }
