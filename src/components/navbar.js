@@ -73,7 +73,7 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
               to="aboutme-div"
               spy={true}
               smooth={true}
-              offset={-150}
+              offset={-200}
               duration={100}
               className="nav-link"
             >
@@ -85,16 +85,16 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
               to="experiences-div"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-200}
               duration={100}
               className="nav-link"
             >
-              Experience
+              Experiences
             </Link>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">
-              Work
+              Projects
             </a>
           </li>
           <li className="nav-item">
@@ -128,7 +128,7 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
                 to="aboutme-div"
                 spy={true}
                 smooth={true}
-                offset={-150}
+                offset={-200}
                 duration={100}
                 className="nav-link"
               >
@@ -140,16 +140,16 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
                 to="experiences-div"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-200}
                 duration={100}
                 className="nav-link"
               >
-                Experience
+                Experiences
               </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Work
+                Projects
               </a>
             </li>
             <li className="nav-item">

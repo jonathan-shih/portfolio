@@ -5,6 +5,8 @@ import { ExperienceDescription } from "./experienceDescription";
 const Experiences = () => {
   const [active, setActive] = useState(CompanyData[0].name);
   return (
+    <div className="experiences-wrapper align-items-start d-flex flex-column">
+      <h3 className="sub-text section-header"> Professional Experiences </h3>
     <div className="experiences-div">
       <div className="select">
         {CompanyData.map((company) => (
@@ -19,7 +21,7 @@ const Experiences = () => {
               setActive(company.name);
             }}
           >
-            <h5>{company.name}</h5>
+            <h4>{company.name}</h4>
           </li>
         ))}
       </div>
@@ -34,12 +36,13 @@ const Experiences = () => {
             <h5 className="sub-text">{description.date}</h5>
             <ul>
               {description.desc.map((desc) => (
-                <li>{desc}</li>
+                <li><h4>{desc}</h4></li>
               ))}
             </ul>
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };

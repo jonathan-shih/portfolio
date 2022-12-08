@@ -1,7 +1,6 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.css";
-import { BrowserRouter } from "react-router-dom";
 import { useState } from "react";
 
 import NavigationTopbar from "./components/navbar.js";
@@ -9,6 +8,7 @@ import SideBar from "./components/sidebar";
 import Intro from "./components/intro";
 import AboutMe from "./components/aboutMe";
 import Experiences from "./components/experiences/experiences";
+import Work from "./components/projects/projects"
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -20,6 +20,7 @@ function App() {
         <Intro darkMode={darkMode} setDarkMode={setDarkMode} />
         <AboutMe />
         <Experiences />
+        <Work />
         <div className="segment-wrapper"></div>
       </div>
       <SideBar />

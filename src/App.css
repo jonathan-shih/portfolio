@@ -157,6 +157,7 @@
   height:22px;
   width: 12px;
   margin-left: 5px;
+  margin-top: -3px;
 }
 
 .logo {
@@ -236,7 +237,7 @@
 }
 
 .section-header {
-  border-bottom: 1px solid;
+  margin-bottom: 20px;
 }
 
 .nav-bar {
@@ -290,12 +291,10 @@
 
 .dark-mode .small-nav {
   background-color: #121212;
-  color: white;
 }
 
 .light-mode .small-nav {
   background-color: #fff;
-  color: #231f20;
 }
 
 .small-nav{
@@ -324,7 +323,7 @@
   background-color:#9e959566;
 }
 
-.small-nav ul, .experiences-div .select li {
+.small-nav ul, .experiences-div .select li, .work-wrapper .select li {
   list-style-type: none;
 }
 
@@ -373,13 +372,13 @@
   z-index: 0;
 }
 
-.aboutme-div {
+.aboutme-div, .experiences-wrapper {
   overflow: visible;
   padding-bottom: 100px;
   border-bottom: 0.5px solid;
 }
 
-.experiences-div {
+.experiences-wrapper, .work-wrapper {
   padding-top: 100px;
 }
 
@@ -392,6 +391,7 @@
   margin-left: 5px;
   margin-right: 5px;
 }
+
 .experiences-div .description {
   text-align: left;
 }
@@ -401,6 +401,25 @@
 }
 
 .experiences-div .description li {
-  margin-left : -10px;
+  margin-left : -20px;
   padding-left: 5px;
+}
+
+.work-wrapper .list-item {  
+  border-bottom: 3px solid #9e959566;
+}
+
+.work-wrapper .list-item-active {
+  color: #4eab6d;
+  border-bottom: 3px solid ;
+}
+
+.work-wrapper .list-item, .list-item-active {
+  text-align: right;
+  padding: 0px 10px 0px 10px;
+}
+
+.work-wrapper .select {
+  margin-right: 0px;
+  margin-left: auto;
 }
