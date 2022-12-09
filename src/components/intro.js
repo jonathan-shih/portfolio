@@ -10,8 +10,9 @@ const Intro = ({ darkMode, setDarkMode }) => {
           </div>
           <h3 className="intro-text">
             I'm a software engineer and designer, welcome to my portfolio
-            website! Feel free to scroll down or use the links on the top right
-            to learn more about me.
+            website! This website was coded with ReactJS, and is completely
+            reactive for all screen sizes. Feel free to scroll down or use the
+            links on the top right to learn more about me.
           </h3>
           <div className={darkMode ? "intro-text sub-text d-flex" : "d-none"}>
             <h4>

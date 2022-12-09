@@ -80,7 +80,7 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
               About Me
             </Link>
           </li>
-          <li className="nav-item">
+          <li className="nav-item" type="button">
             <Link
               to="experiences-div"
               spy={true}
@@ -92,10 +92,17 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
               Experiences
             </Link>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
+          <li className="nav-item" type="button">
+            <Link
+              to="projects-div"
+              spy={true}
+              smooth={true}
+              offset={-200}
+              duration={100}
+              className="nav-link"
+            >
               Projects
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
             <a className="nav-link">Contact</a>
@@ -135,7 +142,7 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
                 About Me
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" type="button">
               <Link
                 to="experiences-div"
                 spy={true}
@@ -147,10 +154,17 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
                 Experiences
               </Link>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
+            <li className="nav-item" type="button">
+              <Link
+                to="projects-div"
+                spy={true}
+                smooth={true}
+                offset={-200}
+                duration={100}
+                className="nav-link"
+              >
                 Projects
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link">Contact</a>
