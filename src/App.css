@@ -25,37 +25,34 @@
   src: url("./assets/calibri-bold.ttf") format("truetype");
 }
 
-@media screen and (min-width: 1600px) {
+@media only screen and (max-width: 768px) {
   .content-wrapper {
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
   .aboutme-text-div {
-    padding-right: 20px;
+    padding-top: 20px;
   }
-  .profile-div {
-    margin-top: 60px;
-  }
-  .experiences-div {
+  .experiences-div .select{
     display: flex;
   }
   .experiences-div .company-list-item {
-    border-right: 3px solid #9e959566;
+    border-bottom: 3px solid #9e959566;
   }
   .experiences-div .company-list-item-active {
     color: #4eab6d;
-    border-right: 3px solid ;
+    border-bottom: 3px solid ;
   }
-  .experiences-div .company-list-item, .company-list-item-active{
+  .experiences-div .company-list-item, .company-list-item-active {
     text-align: right;
-    padding: 2px 20px 2px 0px;
+    padding: 0px 10px 0px 10px;
   }
   .experiences-div .description {
-    margin-left: 20px;
+    margin-top: 20px;
   }
 }
 
-@media screen and (max-width: 1600px) and (min-width:768px) {
+@media only screen and (min-width:768px) {
   .content-wrapper {
     padding-left: 15%;
     padding-right: 15%;
@@ -83,31 +80,15 @@
   .experiences-div .description {
     margin-left: 20px;
   }
+  .project-preview-div {
+    padding-right: 20px;
+  }
 }
-@media screen and (max-width: 768px) {
+
+@media only screen and (min-width: 1600px) {
   .content-wrapper {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-  .aboutme-text-div {
-    padding-top: 20px;
-  }
-  .experiences-div .select{
-    display: flex;
-  }
-  .experiences-div .company-list-item {
-    border-bottom: 3px solid #9e959566;
-  }
-  .experiences-div .company-list-item-active {
-    color: #4eab6d;
-    border-bottom: 3px solid ;
-  }
-  .experiences-div .company-list-item, .company-list-item-active {
-    text-align: right;
-    padding: 0px 10px 0px 10px;
-  }
-  .experiences-div .description {
-    margin-top: 20px;
+    padding-left: 25%;
+    padding-right: 25%;
   }
 }
 
@@ -430,6 +411,50 @@
 }
 
 .project-img {
+  position: relative;
   width: 100%;
   height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  filter: grayscale(1);
+  transition: 0.25s ease-in-out;
+}
+
+.project-preview-div:hover .project-img {
+  filter: grayscale(0);
+  transition: 0.25s ease-in-out;
+}
+
+.project-img-fullscreen {
+  position: absolute;
+  width: 80vw;
+  z-index: 20;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  display:none;
+}
+
+.project-img-fullscreen--show {
+  display:block;
+}
+
+.programming-project-wrapper .programming-project-transparent {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  transition-timing-function: ease-in;
+  transition: 0.25s;
+}
+
+.programming-project-wrapper .programming-project-transparent--show {
+  backdrop-filter:blur(3px);
+  z-index: 19;
+  transition-timing-function: ease-in;
+  transition: 0.25s;
 }
