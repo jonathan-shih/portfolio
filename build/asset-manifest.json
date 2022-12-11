@@ -1,12 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6baac7e9.css",
-    "main.js": "/portfolio/static/js/main.6a87a266.js",
+    "main.css": "/portfolio/static/css/main.a50acf2f.css",
+    "main.js": "/portfolio/static/js/main.0945b65a.js",
     "static/js/787.749b4a44.chunk.js": "/portfolio/static/js/787.749b4a44.chunk.js",
     "static/media/profile_img.jpg": "/portfolio/static/media/profile_img.809d0e0801bc6523aa06.jpg",
+    "static/media/memedb_search.png": "/portfolio/static/media/memedb_search.8ee0880df0701bae2087.png",
+    "static/media/memedb_interact.png": "/portfolio/static/media/memedb_interact.ed72f2114a0897d75cfc.png",
     "static/media/covey_ingame.png": "/portfolio/static/media/covey_ingame.d48df5ac164de884b2e9.png",
+    "static/media/memedb_topmeme.png": "/portfolio/static/media/memedb_topmeme.ebeb280416fba62bb532.png",
     "static/media/calibri-bold.ttf": "/portfolio/static/media/calibri-bold.d2362af0b37d31196c7c.ttf",
     "static/media/Calibri-light.ttf": "/portfolio/static/media/Calibri-light.bfc9611cc594de9eda6b.ttf",
+    "static/media/covey_profile.png": "/portfolio/static/media/covey_profile.5e4473d758728de76d29.png",
+    "static/media/covey_editnotes.png": "/portfolio/static/media/covey_editnotes.b220082d3e2a7e384171.png",
     "static/media/fa-solid-900.ttf": "/portfolio/static/media/fa-solid-900.b48ad290d0335879a92b.ttf",
     "static/media/Calibri.ttf": "/portfolio/static/media/Calibri.29c57b05b7345f94042a.ttf",
     "static/media/fa-brands-400.ttf": "/portfolio/static/media/fa-brands-400.f9ee61fab3c11e2f3ed3.ttf",
@@ -19,12 +24,12 @@
     "static/media/fa-v4compatibility.ttf": "/portfolio/static/media/fa-v4compatibility.f601162ae669f88823a3.ttf",
     "static/media/fa-v4compatibility.woff2": "/portfolio/static/media/fa-v4compatibility.745989aab0d69cab7e70.woff2",
     "index.html": "/portfolio/index.html",
-    "main.6baac7e9.css.map": "/portfolio/static/css/main.6baac7e9.css.map",
-    "main.6a87a266.js.map": "/portfolio/static/js/main.6a87a266.js.map",
+    "main.a50acf2f.css.map": "/portfolio/static/css/main.a50acf2f.css.map",
+    "main.0945b65a.js.map": "/portfolio/static/js/main.0945b65a.js.map",
     "787.749b4a44.chunk.js.map": "/portfolio/static/js/787.749b4a44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6baac7e9.css",
-    "static/js/main.6a87a266.js"
+    "static/css/main.a50acf2f.css",
+    "static/js/main.0945b65a.js"
   ]
 }

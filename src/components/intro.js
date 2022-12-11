@@ -18,7 +18,7 @@ const Intro = ({ darkMode, setDarkMode }) => {
             <h4>
               ps: click the
               <i
-                type="text"
+                type="button"
                 className="fa-solid fa-sun mode-switch"
                 onClick={() => setDarkMode(!darkMode)}
               />{" "}
@@ -30,7 +30,7 @@ const Intro = ({ darkMode, setDarkMode }) => {
               ps: click the
               {
                 <i
-                  type="text"
+                  type="button"
                   className="fa-solid fa-moon mode-switch"
                   onClick={() => setDarkMode(!darkMode)}
                 />

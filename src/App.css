@@ -80,7 +80,10 @@
   .experiences-div .description {
     margin-left: 20px;
   }
-  .project-preview-div {
+  .project-desc-alt {
+    padding-left: 20px;
+  }
+  .project-desc {
     padding-right: 20px;
   }
 }
@@ -403,11 +406,6 @@
 .projects-wrapper .select {
   margin-right: 0px;
   margin-left: auto;
-  margin-bottom: 20px;
-}
-
-.project-desc-alt {
-  text-align: end ;
 }
 
 .project-img {
@@ -425,19 +423,28 @@
   transition: 0.25s ease-in-out;
 }
 
-.project-img-fullscreen {
-  position: absolute;
+.projects-div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.project-img-fullscreen-div {
   width: 80vw;
+  position: absolute;
   z-index: 20;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
-  text-align: center;
   display:none;
 }
 
-.project-img-fullscreen--show {
+.project-img-fullscreen {
+  width: 80vw;
+  text-align: center;
+}
+
+.project-img-fullscreen-div--show {
   display:block;
 }
 
@@ -457,4 +464,26 @@
   z-index: 19;
   transition-timing-function: ease-in;
   transition: 0.25s;
+}
+
+.carousel-button-left, .carousel-button-right {
+  position: absolute;
+}
+
+.carousel-button-left:hover, .carousel-button-right:hover {
+  color: #4eab6d;
+}
+
+.carousel-button-left {
+  top: 50%;
+  left: -50px;
+}
+
+.carousel-button-right {
+  top: 50%;
+  right: -50px;
+}
+
+.project-preview-div {
+  padding-bottom: 20px;
 }
