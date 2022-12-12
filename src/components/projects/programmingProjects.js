@@ -1,18 +1,24 @@
 import CoveyTown from "./cs_projects/coveyTown";
 import MemeDb from "./cs_projects/memeDb";
+import ImageProcessing from "./cs_projects/imageProcessing";
+import Maze from "./cs_projects/maze";
 import { useEffect } from "react";
 
 const ProgrammingProjects = () => {
   var trans = document.querySelector(".programming-project-transparent");
-  var covey_ingame_img = document.querySelector(".covey_ingame_image");
-  var memedb_img = document.querySelector(".memedb_image");
-  let imagesMap = [covey_ingame_img, memedb_img];
+  var covey_ingame_img = document.querySelector(".covey-ingame-image");
+  var memedb_img = document.querySelector(".memedb-image");
+  var gui_img = document.querySelector(".image-gui");
+  var maze_img = document.querySelector(".maze-image");
+  let imagesMap = [covey_ingame_img, memedb_img, gui_img, maze_img];
 
   useEffect(() => {
     trans = document.querySelector(".programming-project-transparent");
-    covey_ingame_img = document.querySelector(".covey_ingame_image");
-    memedb_img = document.querySelector(".memedb_image");
-    imagesMap = [covey_ingame_img, memedb_img];
+    covey_ingame_img = document.querySelector(".covey-ingame-image");
+    memedb_img = document.querySelector(".memedb-image");
+    gui_img = document.querySelector(".image-gui");
+    maze_img = document.querySelector(".maze-image");
+    imagesMap = [covey_ingame_img, memedb_img, gui_img, maze_img];
   }, []);
 
   const unFocusImage = () => {
@@ -33,6 +39,8 @@ const ProgrammingProjects = () => {
       <div className="projects-div ">
         <CoveyTown />
         <MemeDb />
+        <ImageProcessing />
+        <Maze />
       </div>
     </div>
   );

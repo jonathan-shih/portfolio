@@ -11,6 +11,15 @@ root.render(
     <link rel="preload" as="image" href="./assets/logo_black.png" />
     <link rel="preload" as="image" href="./assets/white.png" />
     <link rel="preload" as="image" href="./assets/profile_img.jpg" />
+    <link rel="preload" as="image" href="./assets/covey_editnotes.png" />
+    <link rel="preload" as="image" href="./assets/covey_ingame.png" />
+    <link rel="preload" as="image" href="./assets/covey_profile.png" />
+    <link rel="preload" as="image" href="./assets/memedb_interact.png" />
+    <link rel="preload" as="image" href="./assets/memedb_search.png" />
+    <link rel="preload" as="image" href="./assets/memedb_topmeme.png" />
+    <link rel="preload" as="image" href="./assets/maze_player.png" />
+    <link rel="preload" as="image" href="./assets/maze_bfs.gif" />
+    <link rel="preload" as="image" href="./assets/maze_dfs.gif" />
     <App />
   </React.StrictMode>
 );

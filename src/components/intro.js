@@ -16,18 +16,18 @@ const Intro = ({ darkMode, setDarkMode }) => {
           </h3>
           <div className={darkMode ? "intro-text sub-text d-flex" : "d-none"}>
             <h4>
-              ps: click the
+              ps:
               <i
                 type="button"
                 className="fa-solid fa-sun mode-switch"
                 onClick={() => setDarkMode(!darkMode)}
               />{" "}
-              to see the website in light mode!
+              changes the website to light mode!
             </h4>
           </div>
           <div className={darkMode ? "d-none" : "intro-text sub-text d-flex"}>
             <h4>
-              ps: click the
+              ps:
               {
                 <i
                   type="button"
@@ -35,7 +35,7 @@ const Intro = ({ darkMode, setDarkMode }) => {
                   onClick={() => setDarkMode(!darkMode)}
                 />
               }{" "}
-              to see the website in dark mode!
+              changes the website to dark mode!
             </h4>
           </div>
         </div>

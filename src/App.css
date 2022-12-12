@@ -50,6 +50,15 @@
   .experiences-div .description {
     margin-top: 20px;
   }
+  .carousel-button-left {
+    left: -70px;
+  }
+  .carousel-button-right {
+    right: -70px;
+  }
+  .project-img-fullscreen-div {
+    margin-top: 20px;
+  }
 }
 
 @media only screen and (min-width:768px) {
@@ -80,11 +89,14 @@
   .experiences-div .description {
     margin-left: 20px;
   }
-  .project-desc-alt {
-    padding-left: 20px;
-  }
   .project-desc {
     padding-right: 20px;
+  }
+  .carousel-button-left {
+    left: -100px;
+  }
+  .carousel-button-right {
+    right: -100px;
   }
 }
 
@@ -281,6 +293,10 @@
   background-color: #fff;
 }
 
+.nav-bar .mode-switch {
+  padding-top: 3px;
+}
+
 .small-nav{
   position:fixed;
   height: 100vh;
@@ -445,7 +461,8 @@
 }
 
 .project-img-fullscreen-div--show {
-  display:block;
+  display: flex;
+  align-items: center;
 }
 
 .programming-project-wrapper .programming-project-transparent {
@@ -468,20 +485,17 @@
 
 .carousel-button-left, .carousel-button-right {
   position: absolute;
+  height: 200px;
+  width: 100px;
+  color: #9e9595;
+}
+
+.fa-chevron-left, .fa-chevron-right {
+  position: relative;
 }
 
 .carousel-button-left:hover, .carousel-button-right:hover {
   color: #4eab6d;
-}
-
-.carousel-button-left {
-  top: 50%;
-  left: -50px;
-}
-
-.carousel-button-right {
-  top: 50%;
-  right: -50px;
 }
 
 .project-preview-div {
