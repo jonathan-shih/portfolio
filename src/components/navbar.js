@@ -1,6 +1,7 @@
 import React from "react";
 import logo_black from "../assets/logo_black.png";
 import logo_white from "../assets/logo_white.png";
+import resume from "../assets/Jonathan Shih's resume.pdf";
 import { useEffect, useState } from "react";
 import * as Scroll from "react-scroll";
 import { Link } from "react-scroll";
@@ -105,7 +106,9 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
             </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link">Resume</a>
+            <a className="nav-link" href={resume} target="_blank">
+              Resume
+            </a>
           </li>
           <li className="nav-item">
             <div className="d-flex align-items-center switch-div">
@@ -167,7 +170,9 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link">Contact</a>
+              <a className="nav-link" href={resume} target="_blank">
+                Resume
+              </a>
             </li>
             <li className="nav-item">
               <i
