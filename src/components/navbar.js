@@ -105,7 +105,7 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
             </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link">Contact</a>
+            <a className="nav-link">Resume</a>
           </li>
           <li className="nav-item">
             <div className="d-flex align-items-center switch-div">

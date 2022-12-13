@@ -265,6 +265,11 @@
   text-decoration-thickness: 2px;
   text-underline-offset: 10px;
 }
+
+.resume-link {
+  border: 1px solid;
+}
+
 .topbar .transparent {
   width: 100vw;
   height: 150px;
@@ -446,13 +451,15 @@
 
 .project-img-fullscreen-div {
   width: 80vw;
-  position: absolute;
+  position: fixed;
   z-index: 20;
   margin-left: auto;
   margin-right: auto;
-  left: 0;
-  right: 0;
+  justify-content: center;
   display:none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .project-img-fullscreen {
@@ -500,4 +507,36 @@
 
 .project-preview-div {
   padding-bottom: 20px;
+}
+
+
+.contact-div {
+  padding-top: 50px;
+}
+
+.contact-div .logo {
+  padding-top: 50px;
+  width: 15%;
+}
+
+.contact-div .line {
+  width: 34%;
+  border-bottom: 1px solid;
+}
+
+.contact-div .text {
+  position: relative;
+  top: 35px;
+}
+
+@media only screen and (min-width: 992px) {
+  .project-img-fullscreen {
+    width: 85%;
+  }
+  .carousel-button-left {
+    left: -40px;
+  }
+  .carousel-button-right {
+    right: -40px;
+  }
 }

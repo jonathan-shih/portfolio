@@ -9,6 +9,7 @@ import Intro from "./components/intro";
 import AboutMe from "./components/aboutMe";
 import Experiences from "./components/experiences/experiences";
 import Work from "./components/projects/projects"
+import Contact from "./components/contact";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -21,7 +22,7 @@ function App() {
         <AboutMe />
         <Experiences />
         <Work />
-        <div className="segment-wrapper"></div>
+        <Contact darkMode={darkMode}/>
       </div>
       <SideBar />
     </div>

@@ -88,7 +88,7 @@ const Maze = () => {
             </span>
           </p>
         </div>
-        <div className="project-preview-div">
+        <div className="project-preview-div" type="button">
           <img
             src={mazeImage}
             className="project-img"
