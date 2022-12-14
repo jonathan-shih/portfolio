@@ -468,7 +468,7 @@
   align-items: center;
 }
 
-.programming-project-wrapper .programming-project-transparent {
+.project-transparent {
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -479,7 +479,7 @@
   transition: 0.25s;
 }
 
-.programming-project-wrapper .programming-project-transparent--show {
+.project-transparent--show {
   backdrop-filter:blur(3px);
   z-index: 19;
   transition-timing-function: ease-in;

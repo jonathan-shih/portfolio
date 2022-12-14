@@ -6,11 +6,11 @@ import { useState, useEffect } from "react";
 const MemeDb = () => {
   let memeDbImageList = [memedb_interact, memedb_search, memedb_topmeme];
   const [memeImage, setMemeImage] = useState(memeDbImageList[0]);
-  var trans = document.querySelector(".programming-project-transparent");
+  var trans = document.querySelector(".project-transparent");
   var memedb_img = document.querySelector(".memedb-image");
 
   useEffect(() => {
-    trans = document.querySelector(".programming-project-transparent");
+    trans = document.querySelector(".project-transparent");
     memedb_img = document.querySelector(".memedb-image");
   }, []);
 
@@ -33,12 +33,12 @@ const MemeDb = () => {
   };
 
   const focusImage = () => {
-    trans.classList.add("programming-project-transparent--show");
+    trans.classList.add("project-transparent--show");
     memedb_img.classList.add("project-img-fullscreen-div--show");
   };
 
   const unFocusImage = () => {
-    trans.classList.remove("programming-project-transparent--show");
+    trans.classList.remove("project-transparent--show");
     memedb_img.classList.remove("project-img-fullscreen-div--show");
   };
 

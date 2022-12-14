@@ -6,11 +6,11 @@ import { useState, useEffect } from "react";
 const CoveyTown = () => {
   let coveyImageList = [covey_ingame, covey_edit_notes, covey_profile];
   const [coveyImage, setCoveyImage] = useState(coveyImageList[0]);
-  var trans = document.querySelector(".programming-project-transparent");
+  var trans = document.querySelector(".project-transparent");
   var covey_ingame_img = document.querySelector(".covey-ingame-image");
 
   useEffect(() => {
-    trans = document.querySelector(".programming-project-transparent");
+    trans = document.querySelector(".project-transparent");
     covey_ingame_img = document.querySelector(".covey-ingame-image");
   }, []);
 
@@ -33,12 +33,12 @@ const CoveyTown = () => {
   };
 
   const focusImage = () => {
-    trans.classList.add("programming-project-transparent--show");
+    trans.classList.add("project-transparent--show");
     covey_ingame_img.classList.add("project-img-fullscreen-div--show");
   };
 
   const unFocusImage = () => {
-    trans.classList.remove("programming-project-transparent--show");
+    trans.classList.remove("project-transparent--show");
     covey_ingame_img.classList.remove("project-img-fullscreen-div--show");
   };
 

@@ -2,21 +2,21 @@ import image_gui from "../../../assets/cs_project_screenshots/image_gui.png";
 
 import { useState, useEffect } from "react";
 const ImageProcessing = () => {
-  var trans = document.querySelector(".programming-project-transparent");
+  var trans = document.querySelector(".project-transparent");
   var gui_image = document.querySelector(".image-gui");
 
   useEffect(() => {
-    trans = document.querySelector(".programming-project-transparent");
+    trans = document.querySelector(".project-transparent");
     gui_image = document.querySelector(".image-gui");
   }, []);
 
   const focusImage = () => {
-    trans.classList.add("programming-project-transparent--show");
+    trans.classList.add("project-transparent--show");
     gui_image.classList.add("project-img-fullscreen-div--show");
   };
 
   const unFocusImage = () => {
-    trans.classList.remove("programming-project-transparent--show");
+    trans.classList.remove("project-transparent--show");
     gui_image.classList.remove("project-img-fullscreen-div--show");
   };
 

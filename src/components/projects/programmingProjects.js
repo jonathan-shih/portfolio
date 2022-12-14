@@ -5,7 +5,7 @@ import Maze from "./cs_projects/maze";
 import { useEffect } from "react";
 
 const ProgrammingProjects = () => {
-  var trans = document.querySelector(".programming-project-transparent");
+  var trans = document.querySelector(".project-transparent");
   var covey_ingame_img = document.querySelector(".covey-ingame-image");
   var memedb_img = document.querySelector(".memedb-image");
   var gui_img = document.querySelector(".image-gui");
@@ -13,7 +13,7 @@ const ProgrammingProjects = () => {
   let imagesMap = [covey_ingame_img, memedb_img, gui_img, maze_img];
 
   useEffect(() => {
-    trans = document.querySelector(".programming-project-transparent");
+    trans = document.querySelector(".project-transparent");
     covey_ingame_img = document.querySelector(".covey-ingame-image");
     memedb_img = document.querySelector(".memedb-image");
     gui_img = document.querySelector(".image-gui");
@@ -22,7 +22,7 @@ const ProgrammingProjects = () => {
   }, []);
 
   const unFocusImage = () => {
-    trans.classList.remove("programming-project-transparent--show");
+    trans.classList.remove("project-transparent--show");
     imagesMap.forEach((image) => {
       if (image.classList.contains("project-img-fullscreen-div--show")) {
         image.classList.remove("project-img-fullscreen-div--show");
@@ -32,11 +32,8 @@ const ProgrammingProjects = () => {
 
   return (
     <div className="programming-project-wrapper">
-      <div
-        className="programming-project-transparent"
-        onClick={() => unFocusImage()}
-      ></div>
-      <div className="projects-div ">
+      <div className="project-transparent" onClick={() => unFocusImage()}></div>
+      <div className="projects-div">
         <CoveyTown />
         <MemeDb />
         <ImageProcessing />

@@ -6,11 +6,11 @@ import { useState, useEffect } from "react";
 const Maze = () => {
   let mazeImageList = [maze_player, maze_bfs, maze_dfs];
   const [mazeImage, setMazeImage] = useState(mazeImageList[0]);
-  var trans = document.querySelector(".programming-project-transparent");
+  var trans = document.querySelector(".project-transparent");
   var maze_img = document.querySelector(".maze-image");
 
   useEffect(() => {
-    trans = document.querySelector(".programming-project-transparent");
+    trans = document.querySelector(".project-transparent");
     maze_img = document.querySelector(".maze-image");
   }, []);
 
@@ -33,12 +33,12 @@ const Maze = () => {
   };
 
   const focusImage = () => {
-    trans.classList.add("programming-project-transparent--show");
+    trans.classList.add("project-transparent--show");
     maze_img.classList.add("project-img-fullscreen-div--show");
   };
 
   const unFocusImage = () => {
-    trans.classList.remove("programming-project-transparent--show");
+    trans.classList.remove("project-transparent--show");
     maze_img.classList.remove("project-img-fullscreen-div--show");
   };
 
