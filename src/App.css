@@ -535,4 +535,11 @@
   .carousel-button-right {
     right: -40px;
   }
+  .wordPoster-image .project-img-fullscreen {
+    width: 75%;
+  }
+  .wordPoster {
+    width: 50%;
+  }
 }
+

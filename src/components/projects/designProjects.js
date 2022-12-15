@@ -1,15 +1,18 @@
 import { useEffect } from "react";
 import Siddhartha from "./design_projects/siddhartha";
+import WordPoster from "./design_projects/wordPoster";
 
 const DesignProjects = () => {
   var trans = document.querySelector(".project-transparent");
   var siddhartha_img = document.querySelector(".siddhartha-image");
-  let imagesMap = [siddhartha_img];
+  var wordPoster_img = document.querySelector(".wordPoster-image");
+  let imagesMap = [siddhartha_img, wordPoster_img];
 
   useEffect(() => {
     trans = document.querySelector(".project-transparent");
     siddhartha_img = document.querySelector(".siddhartha-image");
-    imagesMap = [siddhartha_img];
+    wordPoster_img = document.querySelector(".wordPoster-image");
+    imagesMap = [siddhartha_img, wordPoster_img];
   }, []);
 
   const unFocusImage = () => {
@@ -25,6 +28,7 @@ const DesignProjects = () => {
       <div className="project-transparent" onClick={() => unFocusImage()}></div>
       <div className="projects-div">
         <Siddhartha />
+        <WordPoster />
       </div>
     </div>
   );
