@@ -62,6 +62,7 @@ const Siddhartha = () => {
           src={siddharthaImage}
           className="project-img-fullscreen"
           onClick={() => unFocusImage()}
+          type="button"
         ></img>
         <h2
           className="carousel-button-right d-flex align-items-center"
@@ -84,7 +85,7 @@ const Siddhartha = () => {
           <p className="project-desc-alt-text h4">
             <span>
               Designed and created alternate covers for the Indian novel -
-              Siddhartha.
+              Siddhartha in <span className="green">Adobe InDesign</span>.
             </span>
           </p>
         </div>

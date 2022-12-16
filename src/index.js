@@ -106,7 +106,6 @@ root.render(
       as="image"
       href="./assets/design_projects_screenshots/project_proposal_1.jpg"
     />
-    \
     <link
       rel="preload"
       as="image"

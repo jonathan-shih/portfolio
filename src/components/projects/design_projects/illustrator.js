@@ -1,72 +1,68 @@
-import ramen from "../../../assets/design_project_screenshots/ramen.png";
-import siddhartha_yellow from "../../../assets/design_project_screenshots/siddhartha_yellow.jpg";
-import siddhartha_red from "../../../assets/design_project_screenshots/siddhartha_red.jpg";
+import ramen from "../../../assets/design_project_screenshots/ramen.jpg";
+import doughnuts from "../../../assets/design_project_screenshots/doughnuts.jpg";
 
 import { useState, useEffect } from "react";
 const Illustrator = () => {
-  let siddharthaImageList = [
-    siddhartha_blue,
-    siddhartha_yellow,
-    siddhartha_red,
-  ];
-  const [siddharthaImage, setSiddharthaImage] = useState(
-    siddharthaImageList[0]
+  let illustratorImageList = [ramen, doughnuts];
+  const [illustratorImage, setIllustratorImage] = useState(
+    illustratorImageList[0]
   );
   var trans = document.querySelector(".project-transparent");
-  var siddhartha_img = document.querySelector(".siddhartha-image");
+  var illustrator_img = document.querySelector(".illustrator-image");
 
   useEffect(() => {
     trans = document.querySelector(".project-transparent");
-    siddhartha_img = document.querySelector(".siddhartha-image");
+    illustrator_img = document.querySelector(".illustrator-image");
   }, []);
 
   const handleRight = (imageList, curImage) => {
     let curIndex = imageList.indexOf(curImage);
     if (curIndex === imageList.length - 1) {
-      setSiddharthaImage(imageList[0]);
+      setIllustratorImage(imageList[0]);
     } else {
-      setSiddharthaImage(imageList[curIndex + 1]);
+      setIllustratorImage(imageList[curIndex + 1]);
     }
   };
 
   const handleLeft = (imageList, curImage) => {
     let curIndex = imageList.indexOf(curImage);
     if (curIndex === 0) {
-      setSiddharthaImage(imageList[imageList.length - 1]);
+      setIllustratorImage(imageList[imageList.length - 1]);
     } else {
-      setSiddharthaImage(imageList[curIndex - 1]);
+      setIllustratorImage(imageList[curIndex - 1]);
     }
   };
 
   const focusImage = () => {
     trans.classList.add("project-transparent--show");
-    siddhartha_img.classList.add("project-img-fullscreen-div--show");
+    illustrator_img.classList.add("project-img-fullscreen-div--show");
   };
 
   const unFocusImage = () => {
     trans.classList.remove("project-transparent--show");
-    siddhartha_img.classList.remove("project-img-fullscreen-div--show");
+    illustrator_img.classList.remove("project-img-fullscreen-div--show");
   };
 
   return (
     <div>
-      <div className="project-img-fullscreen-div siddhartha-image">
+      <div className="project-img-fullscreen-div illustrator-image">
         <h2
           className="carousel-button-left d-flex align-items-center"
           type="button"
-          onClick={() => handleLeft(siddharthaImageList, siddharthaImage)}
+          onClick={() => handleLeft(illustratorImageList, illustratorImage)}
         >
           <i className="fa-solid fa-chevron-left mx-auto"></i>
         </h2>
         <img
-          src={siddharthaImage}
+          src={illustratorImage}
           className="project-img-fullscreen"
           onClick={() => unFocusImage()}
+          type="button"
         ></img>
         <h2
           className="carousel-button-right d-flex align-items-center"
           type="button"
-          onClick={() => handleRight(siddharthaImageList, siddharthaImage)}
+          onClick={() => handleRight(illustratorImageList, illustratorImage)}
         >
           <i className="fa-solid fa-chevron-right mx-auto"></i>
         </h2>
@@ -74,17 +70,18 @@ const Illustrator = () => {
       <div className="projects-div d-flex flex-column flex-lg-row align-items-center">
         <div className="project-preview-div" type="button">
           <img
-            src={siddharthaImage}
+            src={illustratorImage}
             className="project-img"
             onClick={() => focusImage()}
           ></img>
         </div>
         <div className="project-desc-alt d-flex flex-column text-lg-end text-start ms-lg-4 w-100">
-          <h4 className="project-name">Siddhartha Cover</h4>
+          <h4 className="project-name">Illustrator Graphics</h4>
           <p className="project-desc-alt-text h4">
             <span>
-              Designed and created alternate covers for the Indian novel -
-              Siddhartha.
+              Graphics created in{" "}
+              <span className="green">Adobe Illustrator</span>, with
+              experimentation on shading style.
             </span>
           </p>
         </div>

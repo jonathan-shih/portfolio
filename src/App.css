@@ -25,88 +25,6 @@
   src: url("./assets/calibri-bold.ttf") format("truetype");
 }
 
-@media only screen and (max-width: 768px) {
-  .content-wrapper {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-  .aboutme-text-div {
-    padding-top: 20px;
-  }
-  .experiences-div .select{
-    display: flex;
-  }
-  .experiences-div .company-list-item {
-    border-bottom: 3px solid #9e959566;
-  }
-  .experiences-div .company-list-item-active {
-    color: #4eab6d;
-    border-bottom: 3px solid ;
-  }
-  .experiences-div .company-list-item, .company-list-item-active {
-    text-align: right;
-    padding: 0px 10px 0px 10px;
-  }
-  .experiences-div .description {
-    margin-top: 20px;
-  }
-  .carousel-button-left {
-    left: -70px;
-  }
-  .carousel-button-right {
-    right: -70px;
-  }
-  .project-img-fullscreen-div {
-    margin-top: 20px;
-  }
-}
-
-@media only screen and (min-width:768px) {
-  .content-wrapper {
-    padding-left: 15%;
-    padding-right: 15%;
-  }
-  .aboutme-text-div {
-    padding-right: 20px;
-  }
-  .profile-div {
-    margin-top: 60px;
-  }
-  .experiences-div {
-    display: flex;
-  }
-  .experiences-div .company-list-item {
-    border-right: 3px solid #9e959566;
-  }
-  .experiences-div .company-list-item-active {
-    color: #4eab6d;
-    border-right: 3px solid ;
-  }
-  .experiences-div .company-list-item, .company-list-item-active{
-    text-align: right;
-    padding: 2px 20px 2px 0px;
-  }
-  .experiences-div .description {
-    margin-left: 20px;
-  }
-  .project-desc {
-    padding-right: 20px;
-  }
-  .carousel-button-left {
-    left: -100px;
-  }
-  .carousel-button-right {
-    right: -100px;
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  .content-wrapper {
-    padding-left: 25%;
-    padding-right: 25%;
-  }
-}
-
 *::-webkit-scrollbar {
   width: 8px;
 }
@@ -188,7 +106,7 @@
   margin-bottom: 90px;
 }
 
-.fa-github, .fa-linkedin-in{
+.sidebar .fa-github, .sidebar .fa-linkedin-in{
   position:relative;
   left: -17px;
   margin-bottom: 20px;
@@ -459,7 +377,8 @@
 }
 
 .project-img-fullscreen {
-  width: 80vw;
+  height: 75%;
+  width: auto;
   text-align: center;
 }
 
@@ -505,19 +424,9 @@
   padding-bottom: 20px;
 }
 
-
-.contact-div {
-  padding-top: 50px;
-}
-
 .contact-div .logo {
   padding-top: 50px;
   width: 15%;
-}
-
-.contact-div .line {
-  width: 34%;
-  border-bottom: 1px solid;
 }
 
 .contact-div .text {
@@ -525,21 +434,129 @@
   top: 35px;
 }
 
-@media only screen and (min-width: 992px) {
-  .project-img-fullscreen {
-    width: 85%;
+.contact-div .link-icon {
+  padding-right: 10px;
+}
+
+.contact-div .contact-info {
+  margin-top: 40px;
+  margin-bottom: -20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .content-wrapper {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .aboutme-text-div {
+    padding-top: 20px;
+  }
+  .experiences-div .select{
+    display: flex;
+  }
+  .experiences-div .company-list-item {
+    border-bottom: 3px solid #9e959566;
+  }
+  .experiences-div .company-list-item-active {
+    color: #4eab6d;
+    border-bottom: 3px solid ;
+  }
+  .experiences-div .company-list-item, .company-list-item-active {
+    text-align: right;
+    padding: 0px 10px 0px 10px;
+  }
+  .experiences-div .description {
+    margin-top: 20px;
   }
   .carousel-button-left {
-    left: -40px;
+    left: -70px;
   }
   .carousel-button-right {
-    right: -40px;
+    right: -70px;
   }
-  .wordPoster-image .project-img-fullscreen {
+  .project-img-fullscreen-div {
+    margin-top: 20px;
+  }
+  .contact-div .line {
+    width: 20%;
+    border-bottom: 1px solid;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .content-wrapper {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .aboutme-text-div {
+    padding-right: 20px;
+  }
+  .profile-div {
+    margin-top: 60px;
+  }
+  .experiences-div {
+    display: flex;
+  }
+  .experiences-div .company-list-item {
+    border-right: 3px solid #9e959566;
+  }
+  .experiences-div .company-list-item-active {
+    color: #4eab6d;
+    border-right: 3px solid ;
+  }
+  .experiences-div .company-list-item, .company-list-item-active{
+    text-align: right;
+    padding: 2px 20px 2px 0px;
+  }
+  .experiences-div .description {
+    margin-left: 20px;
+  }
+  .project-desc {
+    padding-right: 20px;
+  }
+  .project-img-fullscreen-div {
     width: 75%;
+  }
+  .project-img-fullscreen {
+    width: 100%;
+  }
+  .illustrator-image, .wordPoster-image {
+    width: auto;
+  }
+  .carousel-button-left {
+    left: -80px;
+  }
+  .carousel-button-right {
+    right: -80px;
+  }
+  .contact-div .line {
+    width: 30%;
+    border-bottom: 1px solid;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .project-img-fullscreen {
+    width: 100%;
+  }
+  .carousel-button-left {
+    left: -70px;
+  }
+  .carousel-button-right {
+    right: -70px;
   }
   .wordPoster {
     width: 50%;
   }
 }
-
+@media only screen and (min-width: 1600px) {
+  .content-wrapper {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+  .contact-div .line {
+    width: 35%;
+    border-bottom: 1px solid;
+  }
+}

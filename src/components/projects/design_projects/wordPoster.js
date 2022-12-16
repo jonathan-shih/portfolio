@@ -59,6 +59,7 @@ const WordPoster = () => {
           src={wordPosterImage}
           className="project-img-fullscreen"
           onClick={() => unFocusImage()}
+          type="button"
         ></img>
         <h2
           className="carousel-button-right d-flex align-items-center"
@@ -74,8 +75,9 @@ const WordPoster = () => {
           <p className="project-desc-text h4">
             <span>
               {" "}
-              This series of posters were made to showcase different fonts and
-              their unique characteristics.
+              This series of posters were designed in{" "}
+              <span className="green">Adobe InDesign</span> to showcase
+              different fonts and their unique characteristics.
               <br></br>
               <br></br>
               All posters were made using their respective font and provide the
