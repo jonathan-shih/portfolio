@@ -21,7 +21,7 @@ const AboutMe = () => {
           <h4 className="aboutme-text">
             Having lived in Hong Kong, China and the US, I have a disctict
             cultural perspective that allows me to effectively communicate and
-            floursih in all kinds of environments, making me a great team
+            flourish in all kinds of environments, making me a great team
             player. I am adapable and quick learning, and always excited to
             learn!
           </h4>

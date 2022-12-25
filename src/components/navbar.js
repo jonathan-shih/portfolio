@@ -15,24 +15,44 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
     if (window.pageYOffset < 10) {
       nav.classList.remove("nav-bar--hidden");
       transparent.classList.remove("transparent--hidden");
+      
+      transparent.classList.remove("nav-bar-backdrop-black");
+      transparent.classList.remove("nav-bar-backdrop-white");
     } else if (lastScroll < currentScroll && currentScroll - lastScroll > 10) {
       nav.classList.add("nav-bar--hidden");
       transparent.classList.add("transparent--hidden");
     } else if (lastScroll > currentScroll && lastScroll - currentScroll > 5) {
       nav.classList.remove("nav-bar--hidden");
       transparent.classList.remove("transparent--hidden");
+      setShadow();
     }
 
     setLastScroll(currentScroll);
   };
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [lastScroll]);
-
+  useEffect(() => {
+    setShadow();
+  }, [darkMode])
+  useEffect(()=> {
+    const transparent = document.querySelector(".transparent");
+    transparent.classList.remove("nav-bar-backdrop-black");
+    transparent.classList.remove("nav-bar-backdrop-white");
+  }, [])
+  const setShadow = () => {
+    const transparent = document.querySelector(".transparent");
+    if(darkMode){
+      transparent.classList.remove("nav-bar-backdrop-white");
+      transparent.classList.add("nav-bar-backdrop-black");
+    } else {
+      transparent.classList.remove("nav-bar-backdrop-black");
+      transparent.classList.add("nav-bar-backdrop-white");
+    }
+  }
   var smallNav = document.querySelector(".small-nav");
   var smallNavTransparent = document.querySelector(".small-nav-transparent");
   useEffect(() => {
@@ -65,7 +85,7 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
         </div>
         <i
           type="button"
-          className="fa-solid fa-bars d-md-none"
+          className="fa-solid fa-bars d-md-none h3"
           onClick={() => showSmallNav()}
         ></i>
         <ul className="nav d-none d-md-flex h6">
@@ -130,7 +150,7 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
           <ul className="h5">
             <i
               type="button"
-              className="fa-solid fa-xmark"
+              className="fa-solid fa-xmark h3"
               onClick={() => hideSmallNav()}
             ></i>
             <li className="nav-item" type="button">

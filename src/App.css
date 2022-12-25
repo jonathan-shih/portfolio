@@ -166,7 +166,7 @@
 }
 
 .nav-bar--hidden, .transparent--hidden{
-  transform: translateY(-150px);
+  transform: translateY(-160px);
 }
 
 .light-mode .topbar .nav-link{
@@ -190,18 +190,25 @@
   position: fixed;
   top:0px;
   left:0px;
-  backdrop-filter:blur(3px);
   z-index: 10;
   transition-timing-function: ease-in;
   transition: 0.25s;
 }
 
 .light-mode .topbar .transparent {
-  background-color:#ffffff66;
+  background-color:#ffffff;
+}
+
+.nav-bar-backdrop-white {
+  filter:drop-shadow(0px 5px 5px #9e959566);
+}
+
+.nav-bar-backdrop-black {
+  filter:drop-shadow(0px 5px 5px black);
 }
 
 .dark-mode .topbar .transparent {
-  background-color:#12121266;
+  background-color:#121212;
 }
 
 .dark-mode .small-nav {
