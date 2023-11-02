@@ -1,4 +1,4 @@
-[Click here to view the website](https://jonathan-shih.github.io/portfolio/): https://jonathan-shih.github.io/portfolio/
+Website hosted on github: [https://jonathan-shih.github.io/portfolio/](https://jonathan-shih.github.io/portfolio/)
 
 # Getting Started with Create React App
 
