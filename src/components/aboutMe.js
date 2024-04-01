@@ -19,10 +19,10 @@ const AboutMe = () => {
             code as well as visually appealing interfaces and designs.
           </h4>
           <h4 className="aboutme-text">
-            Having lived in Hong Kong, China and the US, I have a disctict
+            Having lived in Hong Kong, China and the US, I have a distinct
             cultural perspective that allows me to effectively communicate and
             flourish in all kinds of environments, making me a great team
-            player. I am adapable and quick learning, and always excited to
+            player. I am adaptable and quick learning, and always excited to
             learn!
           </h4>
         </div>
