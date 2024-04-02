@@ -31,7 +31,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run deoloy`
+### `npm run deploy`
 
 Builds the app for production and deploys to the `gh-pages` folder, setting the website live.\
 
