@@ -7,23 +7,22 @@ const AboutMe = () => {
         <div className="aboutme-text-div d-flex flex-column align-items-start">
           <h3 className="sub-text section-header"> About Me </h3>
           <h4 className="aboutme-text">
-            My name is Jonathan Shih and I am currently a Junior studying
-            Computer Science and Design at Northeastern University. I have
-            interests in Software Engineering, Web Developement and UI/UX
-            Design.
+            My name is Jonathan Shih and I have just recently recieved my
+            Bachelor of Science in Computer Science and Design at Northeastern
+            University. I have interests in Software Engineering, Web
+            Developement and UI/UX Design.
           </h4>
           <h4 className="aboutme-text">
-            As an interdicipinary student studying computer science and design,
-            I am able to leverage both logical and creative approaches when
-            solving problems. I strive to create clean and cleverly designed
-            code as well as visually appealing interfaces and designs.
+            As an interdicipinary student who stuided computer science and
+            design, I am able to leverage both logical and creative approaches
+            when solving problems. I strive to create clean and cleverly
+            designed code as well as visually appealing interfaces and designs.
           </h4>
           <h4 className="aboutme-text">
             Having lived in Hong Kong, China and the US, I have a distinct
             cultural perspective that allows me to effectively communicate and
             flourish in all kinds of environments, making me a great team
-            player. I am adaptable and quick learning, and always excited to
-            learn!
+            player. I am adaptable and passionate, and always excited to learn!
           </h4>
         </div>
         <div className="profile-div">

@@ -15,7 +15,7 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
     if (window.pageYOffset < 10) {
       nav.classList.remove("nav-bar--hidden");
       transparent.classList.remove("transparent--hidden");
-      
+
       transparent.classList.remove("nav-bar-backdrop-black");
       transparent.classList.remove("nav-bar-backdrop-white");
     } else if (lastScroll < currentScroll && currentScroll - lastScroll > 10) {
@@ -29,30 +29,36 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
 
     setLastScroll(currentScroll);
   };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [lastScroll]);
+
   useEffect(() => {
     setShadow();
-  }, [darkMode])
-  useEffect(()=> {
+  }, [darkMode]);
+
+  useEffect(() => {
     const transparent = document.querySelector(".transparent");
     transparent.classList.remove("nav-bar-backdrop-black");
     transparent.classList.remove("nav-bar-backdrop-white");
-  }, [])
+  }, []);
+
   const setShadow = () => {
     const transparent = document.querySelector(".transparent");
-    if(darkMode){
+    if (darkMode) {
       transparent.classList.remove("nav-bar-backdrop-white");
-      transparent.classList.add("nav-bar-backdrop-black");
+      window.pageYOffset > 10 &&
+        transparent.classList.add("nav-bar-backdrop-black");
     } else {
       transparent.classList.remove("nav-bar-backdrop-black");
-      transparent.classList.add("nav-bar-backdrop-white");
+      window.pageYOffset > 10 &&
+        transparent.classList.add("nav-bar-backdrop-white");
     }
-  }
+  };
   var smallNav = document.querySelector(".small-nav");
   var smallNavTransparent = document.querySelector(".small-nav-transparent");
   useEffect(() => {
