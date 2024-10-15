@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import { CompanyData } from "./companyData";
 import { ExperienceDescription } from "./experienceDescription";
-
+import resume from "../..//assets/Jonathan Shih's resume.pdf";
 const Experiences = () => {
   const [active, setActive] = useState(CompanyData[0].name);
   return (
     <div className="experiences-wrapper align-items-start d-flex flex-column">
-      <h3 className="sub-text section-header"> Professional Experiences </h3>
+      <div className="d-flex justify-content-between w-100 topbar">
+        <h3 className="sub-text section-header"> Professional Experiences </h3>
+        <a className="nav-link" href={resume} target="_blank">
+          <h5 className="mt-1">view full resume</h5>
+        </a>
+      </div>
       {ExperienceDescription.map((description, i) => (
         <div className="row w-100">
           <div className="col-2 text-end">
