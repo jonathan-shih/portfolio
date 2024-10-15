@@ -74,8 +74,8 @@ const CoveyTown = () => {
           ></img>
         </div>
         <div className="project-desc-alt d-flex flex-column text-lg-end text-start ms-lg-4">
-          <h4 className="project-name">Covey Town Auth</h4>
-          <p className="project-desc-alt-text h4">
+          <h5 className="project-name">Covey Town Auth</h5>
+          <p className="project-desc-alt-text h5">
             <span>This project was coded in</span>
             <span className="green"> Typescript</span>
             <span>
@@ -84,7 +84,7 @@ const CoveyTown = () => {
             </span>
             <br></br>
             <br></br>
-            <span className=" h4">
+            <span className="h5">
               User authentication was integrated using Auth0, with user profiles
               stored in
             </span>

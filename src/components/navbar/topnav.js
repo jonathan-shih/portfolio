@@ -1,13 +1,16 @@
 import React from "react";
-import logo_black from "../assets/logo_black.png";
-import logo_white from "../assets/logo_white.png";
-import resume from "../assets/Jonathan Shih's resume.pdf";
+import logo_black from "../../assets/logo_black.png";
+import logo_white from "../../assets/logo_white.png";
+import resume from "../../assets/Jonathan Shih's resume.pdf";
 import { useEffect, useState } from "react";
 import * as Scroll from "react-scroll";
 import { Link } from "react-scroll";
+import SideNav from "./sidenav.js";
 
 const NavigationTopbar = ({ darkMode, setDarkMode }) => {
   const [lastScroll, setLastScroll] = useState(0);
+  const [zindex, setZindex] = useState(false);
+
   const handleScroll = () => {
     const nav = document.querySelector(".nav-bar");
     const transparent = document.querySelector(".transparent");
@@ -18,12 +21,14 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
 
       transparent.classList.remove("nav-bar-backdrop-black");
       transparent.classList.remove("nav-bar-backdrop-white");
+      setZindex(false);
     } else if (lastScroll < currentScroll && currentScroll - lastScroll > 10) {
       nav.classList.add("nav-bar--hidden");
       transparent.classList.add("transparent--hidden");
     } else if (lastScroll > currentScroll && lastScroll - currentScroll > 5) {
       nav.classList.remove("nav-bar--hidden");
       transparent.classList.remove("transparent--hidden");
+      setZindex(true);
       setShadow();
     }
 
@@ -77,7 +82,7 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
   };
 
   return (
-    <div className="topbar">
+    <div className={`topbar ${zindex && "z-10"}`}>
       <div className="transparent"></div>
       <div className="d-flex align-items-center justify-content-between nav-bar">
         <div>
@@ -151,73 +156,7 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
           </li>
         </ul>
       </div>
-      <div className="small-nav d-md-none flex-column align-items-end">
-        <div className="small-nav-wrapper">
-          <ul className="h5">
-            <i
-              type="button"
-              className="fa-solid fa-xmark h3"
-              onClick={() => hideSmallNav()}
-            ></i>
-            <li className="nav-item" type="button">
-              <Link
-                to="aboutme-div"
-                spy={true}
-                smooth={true}
-                offset={-200}
-                duration={100}
-                className="nav-link"
-              >
-                About Me
-              </Link>
-            </li>
-            <li className="nav-item" type="button">
-              <Link
-                to="experiences-div"
-                spy={true}
-                smooth={true}
-                offset={-200}
-                duration={100}
-                className="nav-link"
-              >
-                Experiences
-              </Link>
-            </li>
-            <li className="nav-item" type="button">
-              <Link
-                to="projects-div"
-                spy={true}
-                smooth={true}
-                offset={-200}
-                duration={100}
-                className="nav-link"
-              >
-                Projects
-              </Link>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href={resume} target="_blank">
-                Resume
-              </a>
-            </li>
-            <li className="nav-item">
-              <i
-                type="button"
-                className={
-                  darkMode
-                    ? "fa-solid fa-sun mode-switch"
-                    : "fa-solid fa-moon mode-switch"
-                }
-                onClick={() => setDarkMode(!darkMode)}
-              ></i>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div
-        className="small-nav-transparent d-md-none"
-        onClick={() => hideSmallNav()}
-      ></div>
+      <SideNav darkMode={darkMode} setDarkMode={setDarkMode} />
     </div>
   );
 };

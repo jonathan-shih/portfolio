@@ -68,7 +68,7 @@ const MemeDb = () => {
       <div className="projects-div d-flex flex-column-reverse flex-lg-row align-items-center">
         <div className="project-desc d-flex flex-column text-start">
           <h4 className="project-name">OMemeDB</h4>
-          <p className="project-desc-text h4">
+          <p className="project-desc-text h5">
             <span>This website utilzies</span>
             <span className="green"> ReactJS, NodeJS and Redux</span>
             <span>
@@ -77,7 +77,7 @@ const MemeDb = () => {
             </span>
             <br></br>
             <br></br>
-            <span className=" h4">Meme data was fetched through an</span>
+            <span className=" h5">Meme data was fetched through an</span>
             <span className="green"> external API </span>
             <span>
               - ImgFlip. With that in mind, users were are able create and login

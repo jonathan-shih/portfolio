@@ -73,8 +73,8 @@ const ProjectProposal = () => {
       </div>
       <div className="projects-div d-flex flex-column-reverse flex-lg-row align-items-center">
         <div className="project-desc d-flex flex-column text-start w-75">
-          <h4 className="project-name">Project Proposal</h4>
-          <p className="project-desc-text h4">
+          <h5 className="project-name">Project Proposal</h5>
+          <p className="project-desc-text h5">
             <span>
               {" "}
               Proposal spreads created in

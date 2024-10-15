@@ -7,42 +7,31 @@ const Experiences = () => {
   return (
     <div className="experiences-wrapper align-items-start d-flex flex-column">
       <h3 className="sub-text section-header"> Professional Experiences </h3>
-    <div className="experiences-div">
-      <div className="select">
-        {CompanyData.map((company) => (
-          <li
-            className={`${
-              active === company.name
-                ? "company-list-item-active"
-                : "company-list-item"
-            }`}
-            type="button"
-            onClick={() => {
-              setActive(company.name);
-            }}
-          >
-            <h4>{company.name}</h4>
-          </li>
-        ))}
-      </div>
-      <div className="description">
-        {ExperienceDescription.map((description) => (
-          <div className={`${active === description.name ? "" : "d-none"}`}>
-            <div className="d-flex company-name">
-              <h4 className="fullname">{description.fullName}</h4>
-              <h4 className="spacer"></h4>
-              <h4 className="green">{description.role}</h4>
-            </div>
-            <h5 className="sub-text">{description.date}</h5>
-            <ul>
-              {description.desc.map((desc) => (
-                <li><h4>{desc}</h4></li>
-              ))}
-            </ul>
+      {ExperienceDescription.map((description, i) => (
+        <div className="row w-100">
+          <div className="col-2 text-end">
+            <h5>{description.date}</h5>
           </div>
-        ))}
-      </div>
-    </div>
+          <div
+            className={`${
+              i < ExperienceDescription.length - 1 && "pb-2"
+            } col-10 experiences-div`}
+          >
+            <div>
+              <div className="d-md-flex">
+                <h5 className="green">{description.role}</h5>
+                <h5 className="spacer d-none d-md-block ps-1 pe-1"> | </h5>
+                <h5 className="fullname">{description.fullName}</h5>
+              </div>
+              <ul>
+                <li>
+                  <h5>{description.desc}</h5>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };

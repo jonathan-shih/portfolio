@@ -81,6 +81,7 @@
 .sidebar {
   position: fixed;
   bottom:0px;
+  z-index: 1;
 }
 
 .email {
@@ -115,6 +116,11 @@
 
 .link-icon {
   color: inherit;
+}
+
+.content-wrapper {
+  z-index: 1;
+  position: relative
 }
 
 .segment-wrapper {
@@ -162,7 +168,7 @@
   padding-right: 40px;
   padding-top: 20px;
   transition-timing-function: ease-in;
-  transition: 0.4s;
+  transition: 0.25s;
 }
 
 .nav-bar--hidden, .transparent--hidden{
@@ -190,11 +196,13 @@
   position: fixed;
   top:0px;
   left:0px;
-  z-index: 10;
   transition-timing-function: ease-in;
   transition: 0.25s;
 }
-
+.z-10 {
+  position: relative;
+  z-index: 10;
+}
 .light-mode .topbar .transparent {
   background-color:#ffffff;
 }
@@ -271,6 +279,37 @@
   transform: translateX(-100vw);
 }
 
+.background-wrapper {
+  height: 100vh;
+  width: 100vw;
+  position:fixed;
+  top:0;
+  left:0;
+}
+
+#blob {
+  background-color: white;
+  height: 50vh;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: radial-gradient( circle, #90fa3e, #21996c);
+  z-index: 0;
+  opacity: 0.25;
+}
+
+#blur {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  backdrop-filter: blur(10vh);
+  z-index:0;
+}
+
 .profile-div {
   position: relative;
   overflow: visible;
@@ -329,6 +368,12 @@
 .experiences-div .description li {
   margin-left : -20px;
   padding-left: 5px;
+}
+
+.experiences-div {
+  border-left: 1px solid #9e959566;
+  text-align: left;
+  padding-left: 20%;
 }
 
 .projects-wrapper .list-item {

@@ -16,7 +16,7 @@ const Work = () => {
             type="button"
             onClick={() => setActive("programming")}
           >
-            <h4>Programming</h4>
+            <h5>Programming</h5>
           </li>
           <li
             className={`${
@@ -25,7 +25,7 @@ const Work = () => {
             type="button"
             onClick={() => setActive("design")}
           >
-            <h4>Design</h4>
+            <h5>Design</h5>
           </li>
         </div>
         {active === "programming" ? (

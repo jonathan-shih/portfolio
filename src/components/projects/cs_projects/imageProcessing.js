@@ -39,7 +39,7 @@ const ImageProcessing = () => {
         </div>
         <div className="project-desc-alt d-flex flex-column text-lg-end text-start ms-lg-4 w-100">
           <h4 className="project-name">Image Processing</h4>
-          <p className="project-desc-alt-text h4">
+          <p className="project-desc-alt-text h5">
             <span>This image manipulator was coded in</span>
             <span className="green"> Java</span>
             <span>
@@ -48,7 +48,7 @@ const ImageProcessing = () => {
             </span>
             <br></br>
             <br></br>
-            <span className=" h4">
+            <span className="h5">
               Filters are a implemented through RGB manipulation, which are
               applied through the usages of{" "}
               <span className="green"> matrixes and kernels</span>. The tool is

@@ -76,8 +76,8 @@ const Illustrator = () => {
           ></img>
         </div>
         <div className="project-desc-alt d-flex flex-column text-lg-end text-start ms-lg-4 w-100">
-          <h4 className="project-name">Illustrator Graphics</h4>
-          <p className="project-desc-alt-text h4">
+          <h5 className="project-name">Illustrator Graphics</h5>
+          <p className="project-desc-alt-text h5">
             <span>
               Graphics created in{" "}
               <span className="green">Adobe Illustrator</span>, with

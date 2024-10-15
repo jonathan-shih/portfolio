@@ -81,8 +81,8 @@ const Siddhartha = () => {
           ></img>
         </div>
         <div className="project-desc-alt d-flex flex-column text-lg-end text-start ms-lg-4 w-100">
-          <h4 className="project-name">Siddhartha Cover</h4>
-          <p className="project-desc-alt-text h4">
+          <h5 className="project-name">Siddhartha Cover</h5>
+          <p className="project-desc-alt-text h5">
             <span>
               Designed and created alternate covers for the Indian novel -
               Siddhartha in <span className="green">Adobe InDesign</span>.
