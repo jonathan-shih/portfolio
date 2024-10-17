@@ -6,12 +6,8 @@ const Experiences = () => {
   const [active, setActive] = useState(CompanyData[0].name);
   return (
     <div className="experiences-wrapper align-items-start d-flex flex-column">
-      <div className="d-flex justify-content-between w-100 topbar">
-        <h3 className="sub-text section-header"> Professional Experiences </h3>
-        <a className="nav-link" href={resume} target="_blank">
-          <h5 className="mt-1">view full resume</h5>
-        </a>
-      </div>
+      <h3 className="sub-text section-header"> Professional Experiences </h3>
+
       {ExperienceDescription.map((description, i) => (
         <div className="row w-100">
           <div className="col-2 text-end">
@@ -37,6 +33,11 @@ const Experiences = () => {
           </div>
         </div>
       ))}
+      <div className="topbar d-flex flex-end w-100 justify-content-end pt-3">
+        <a className="nav-link" href={resume} target="_blank">
+          <h5>View full resume</h5>
+        </a>
+      </div>
     </div>
   );
 };

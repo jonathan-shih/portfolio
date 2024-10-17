@@ -13,29 +13,20 @@ const Intro = ({ darkMode, setDarkMode }) => {
             website! This website was coded with ReactJS, feel free to scroll
             down or use the links on the top right to learn more about me.
           </h4>
-          <div className={darkMode ? "intro-text sub-text d-flex" : "d-none"}>
+          <div className={"intro-text sub-text d-flex"}>
             <h5>
-              ps:
+              Click
               <i
                 type="button"
-                className="fa-solid fa-sun mode-switch"
+                className={`fa-solid mode-switch ${
+                  darkMode ? "fa-sun" : "fa-moon"
+                }`}
                 onClick={() => setDarkMode(!darkMode)}
               />{" "}
-              changes the website to light mode!
+              to view the website in&nbsp;
             </h5>
-          </div>
-          <div className={darkMode ? "d-none" : "intro-text sub-text d-flex"}>
-            <h5>
-              ps:
-              {
-                <i
-                  type="button"
-                  className="fa-solid fa-moon mode-switch"
-                  onClick={() => setDarkMode(!darkMode)}
-                />
-              }{" "}
-              changes the website to dark mode!
-            </h5>
+            {darkMode ? <h5>light</h5> : <h5>dark</h5>}
+            <h5>&nbsp;mode!</h5>
           </div>
         </div>
       </div>
