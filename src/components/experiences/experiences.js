@@ -1,15 +1,13 @@
-import React, { useState } from "react";
-import { CompanyData } from "./companyData";
+import React from "react";
 import { ExperienceDescription } from "./experienceDescription";
 import resume from "../..//assets/Jonathan Shih's resume.pdf";
 const Experiences = () => {
-  const [active, setActive] = useState(CompanyData[0].name);
   return (
     <div className="experiences-wrapper align-items-start d-flex flex-column">
       <h3 className="sub-text section-header"> Professional Experiences </h3>
 
       {ExperienceDescription.map((description, i) => (
-        <div className="row w-100">
+        <div className="row w-100" key={i}>
           <div className="col-2 text-end">
             <h5>{description.date}</h5>
           </div>
