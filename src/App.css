@@ -311,14 +311,14 @@
 
 #blob {
   background-color: white;
-  height: 50vh;
+  height: 60vh;
   aspect-ratio: 1;
   position: absolute;
-  left: 50%;
-  top: 50%;
+  /* top: 50%;
+  left: 50%; */
   translate: -50% -50%;
   border-radius: 50%;
-  background: radial-gradient( circle, #90fa3e, #21996c);
+  background: linear-gradient(#90fa3e, #21996c);
   z-index: 0;
   opacity: 0.25;
 }

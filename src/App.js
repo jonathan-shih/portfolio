@@ -7,7 +7,7 @@ import { useTheme } from "./themeProvider.js";
 import NavigationTopbar from "./components/navbar/topnav.js";
 import SideBar from "./components/sidebar";
 import Intro from "./components/intro";
-import AboutMe from "./components/aboutMe";
+import AboutMe from "./components/about-me";
 import Experiences from "./components/experiences/experiences";
 import Work from "./components/projects/projects";
 import Contact from "./components/contact";
@@ -57,7 +57,7 @@ function App() {
         <Contact theme={theme}/>
       </div>
       <SideBar />
-      <Gradient loading={loading} theme={theme}/>
+      <Gradient />
     </div>
   );
 }
