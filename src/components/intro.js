@@ -1,4 +1,4 @@
-const Intro = ({ darkMode, setDarkMode }) => {
+const Intro = ({ theme, toggleTheme }) => {
   return (
     <div className="segment-wrapper d-flex">
       <div className="intro-div d-flex flex-column">
@@ -19,13 +19,13 @@ const Intro = ({ darkMode, setDarkMode }) => {
               <i
                 type="button"
                 className={`fa-solid mode-switch ${
-                  darkMode ? "fa-sun" : "fa-moon"
+                  theme==="dark" ? "fa-sun" : "fa-moon"
                 }`}
-                onClick={() => setDarkMode(!darkMode)}
+                onClick={() => toggleTheme()}
               />{" "}
               to view the website in&nbsp;
             </h5>
-            {darkMode ? <h5>light</h5> : <h5>dark</h5>}
+            {theme==="dark" ? <h5>light</h5> : <h5>dark</h5>}
             <h5>&nbsp;mode!</h5>
           </div>
         </div>

@@ -7,7 +7,7 @@ import * as Scroll from "react-scroll";
 import { Link } from "react-scroll";
 import SideNav from "./sidenav.js";
 
-const NavigationTopbar = ({ darkMode, setDarkMode }) => {
+const NavigationTopbar = ({ theme, toggleTheme}) => {
   const [lastScroll, setLastScroll] = useState(0);
   const [zindex, setZindex] = useState(false);
 
@@ -44,7 +44,7 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
 
   useEffect(() => {
     setShadow();
-  }, [darkMode]);
+  }, [theme]);
 
   useEffect(() => {
     const transparent = document.querySelector(".transparent");
@@ -54,7 +54,7 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
 
   const setShadow = () => {
     const transparent = document.querySelector(".transparent");
-    if (darkMode) {
+    if (theme === "dark") {
       transparent.classList.remove("nav-bar-backdrop-white");
       window.pageYOffset > 10 &&
         transparent.classList.add("nav-bar-backdrop-black");
@@ -87,7 +87,7 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
       <div className="d-flex align-items-center justify-content-between nav-bar">
         <div>
           <img
-            src={darkMode ? logo_white : logo_black}
+            src={theme === "dark" ? logo_white : logo_black}
             alt="logo"
             className="logo"
             type="button"
@@ -146,17 +146,17 @@ const NavigationTopbar = ({ darkMode, setDarkMode }) => {
               <i
                 type="button"
                 className={
-                  darkMode
+                  theme === "dark"
                     ? "fa-solid fa-sun mode-switch"
                     : "fa-solid fa-moon mode-switch"
                 }
-                onClick={() => setDarkMode(!darkMode)}
+                onClick={() => toggleTheme()}
               ></i>
             </div>
           </li>
         </ul>
       </div>
-      <SideNav darkMode={darkMode} setDarkMode={setDarkMode} />
+      <SideNav theme={theme} toggleTheme={toggleTheme} />
     </div>
   );
 };

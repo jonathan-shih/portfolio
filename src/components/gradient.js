@@ -1,12 +1,12 @@
 import React from "react";
 import { useEffect } from "react";
 
-const Gradient = ({ darkMode, loading }) => {
+const Gradient = ({ theme, loading }) => {
   var blob;
 
   useEffect(() => {
     blob = document.getElementById("blob");
-  }, [darkMode, loading]);
+  }, [theme, loading]);
 
   window.onpointermove = (event) => {
     const { clientX, clientY } = event;

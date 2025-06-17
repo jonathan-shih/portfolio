@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { Link } from "react-scroll";
 import resume from "../../assets/Jonathan Shih's resume.pdf";
 
-const SideNav = ({ darkMode, setDarkMode }) => {
+const SideNav = ({ theme, toggleTheme }) => {
   var smallNav = document.querySelector(".small-nav");
   var smallNavTransparent = document.querySelector(".small-nav-transparent");
 
@@ -76,12 +76,12 @@ const SideNav = ({ darkMode, setDarkMode }) => {
               <i
                 type="button"
                 className={
-                  darkMode
+                  theme==="dark"
                     ? "fa-solid fa-sun mode-switch"
                     : "fa-solid fa-moon mode-switch"
                 }
                 onClick={() => {
-                  setDarkMode(!darkMode);
+                  toggleTheme();
                   hideSmallNav();
                 }}
               ></i>

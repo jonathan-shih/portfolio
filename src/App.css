@@ -40,25 +40,25 @@
   color: #4eab6d;
 }
 
-.dark-mode {
+.dark {
   background-color: #121212;
   color: white;
   transition-timing-function: ease-in;
   transition: 0.25s;
 }
 
-.light-mode{
+.light{
   background-color: #fff;
   color: #231f20;
   transition-timing-function: ease-in;
   transition: 0.25s;
 }
 
-.light-mode .toggleMode {
+.light .toggleMode {
   background-color: #e9e9ea;
 }
 
-.dark-mode .toggleMode {
+.dark .toggleMode {
   background-color: #39393d;
 }
 
@@ -197,11 +197,11 @@
   transform: translateY(-160px);
 }
 
-.light-mode .topbar .nav-link{
+.light .topbar .nav-link{
   color:#121212;
 }
 
-.dark-mode .topbar .nav-link{
+.dark .topbar .nav-link{
   color:white;
 }
 
@@ -225,7 +225,7 @@
   position: relative;
   z-index: 10;
 }
-.light-mode .topbar .transparent {
+.light .topbar .transparent {
   background-color:#ffffff;
 }
 
@@ -237,15 +237,15 @@
   filter:drop-shadow(0px 5px 5px black);
 }
 
-.dark-mode .topbar .transparent {
+.dark .topbar .transparent {
   background-color:#121212;
 }
 
-.dark-mode .small-nav {
+.dark .small-nav {
   background-color: #121212;
 }
 
-.light-mode .small-nav {
+.light .small-nav {
   background-color: #fff;
 }
 
@@ -275,7 +275,7 @@
   z-index: 12;
 }
 
-.light-mode .small-nav-transparent, .dark-mode .small-nav-transparent {
+.light .small-nav-transparent, .dark .small-nav-transparent {
   background-color:#9e959566;
 }
 

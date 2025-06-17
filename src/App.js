@@ -1,8 +1,9 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.css";
-import { useEffect, useState } from "react";
-
+import { useEffect, useState } from "react"
+;
+import { useTheme } from "./themeProvider.js";
 import NavigationTopbar from "./components/navbar/topnav.js";
 import SideBar from "./components/sidebar";
 import Intro from "./components/intro";
@@ -14,8 +15,15 @@ import Gradient from "./components/gradient.js";
 import LogoAnimation from "./assets/logoanimation.gif";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
   const [loading, setLoading] = useState(true);
+
+  const { theme, setTheme } = useTheme();
+
+  const toggleTheme = () => {
+    setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
+  };
+
+
   const resetGif = () => {
     var img = document.getElementById("gif");
     var imageUrl = img.src;
@@ -31,7 +39,7 @@ function App() {
   }, []);
 
   return (
-    <div className={darkMode ? "dark-mode App" : "light-mode App"}>
+    <div className={`${theme} App`}>
       <div className={`overlay ${!loading && "d-none"}`}>
         <img
           className={`logoani ${!loading && "d-none"}`}
@@ -40,16 +48,16 @@ function App() {
           alt={"loading"}
         />
       </div>
-      <NavigationTopbar darkMode={darkMode} setDarkMode={setDarkMode} />
+      <NavigationTopbar  theme={theme} toggleTheme={toggleTheme} />
       <div className="content-wrapper">
-        <Intro darkMode={darkMode} setDarkMode={setDarkMode} />
+        <Intro theme={theme} toggleTheme={toggleTheme} />
         <AboutMe />
         <Experiences />
         <Work />
-        <Contact darkMode={darkMode} />
+        <Contact theme={theme}/>
       </div>
       <SideBar />
-      <Gradient darkMode={darkMode} loading={loading} />
+      <Gradient loading={loading} theme={theme}/>
     </div>
   );
 }
