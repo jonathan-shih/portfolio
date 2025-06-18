@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { Link } from 'react-scroll';
-import resume from "../../assets/Jonathan Shih's resume.pdf";
+import resume from '../../assets/Jonathan_Shih_resume.pdf';
 
 const SideNav = ({ theme, toggleTheme }) => {
   var smallNav = document.querySelector('.small-nav');
