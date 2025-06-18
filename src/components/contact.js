@@ -1,5 +1,5 @@
-import logo_black from "../assets/logo_black.png";
-import logo_white from "../assets/logo_white.png";
+import logo_black from '../assets/logo_black.png';
+import logo_white from '../assets/logo_white.png';
 
 const Contact = ({ theme }) => {
   return (
@@ -29,7 +29,10 @@ const Contact = ({ theme }) => {
         </a>
         <h6> shih.jo@northeastern.edu </h6>
       </div>
-      <img className="logo" src={theme==="dark" ? logo_white : logo_black}></img>
+      <img
+        className="logo"
+        src={theme === 'dark' ? logo_white : logo_black}
+      ></img>
     </div>
   );
 };

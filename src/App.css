@@ -134,6 +134,9 @@
   margin: auto;
   display: flex;
 }
+.dark .overlay {
+  background-color: #121212;
+}
 
 .logoani {
   margin: auto;

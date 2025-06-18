@@ -1,33 +1,33 @@
-import React from "react";
-import logo_black from "../../assets/logo_black.png";
-import logo_white from "../../assets/logo_white.png";
+import React from 'react';
+import logo_black from '../../assets/logo_black.png';
+import logo_white from '../../assets/logo_white.png';
 import resume from "../../assets/Jonathan Shih's resume.pdf";
-import { useEffect, useState } from "react";
-import * as Scroll from "react-scroll";
-import { Link } from "react-scroll";
-import SideNav from "./sidenav.js";
+import { useEffect, useState } from 'react';
+import * as Scroll from 'react-scroll';
+import { Link } from 'react-scroll';
+import SideNav from './sidenav.js';
 
-const NavigationTopbar = ({ theme, toggleTheme}) => {
+const NavigationTopbar = ({ theme, toggleTheme }) => {
   const [lastScroll, setLastScroll] = useState(0);
   const [zindex, setZindex] = useState(false);
 
   const handleScroll = () => {
-    const nav = document.querySelector(".nav-bar");
-    const transparent = document.querySelector(".transparent");
+    const nav = document.querySelector('.nav-bar');
+    const transparent = document.querySelector('.transparent');
     const currentScroll = window.pageYOffset;
     if (window.pageYOffset < 10) {
-      nav.classList.remove("nav-bar--hidden");
-      transparent.classList.remove("transparent--hidden");
+      nav.classList.remove('nav-bar--hidden');
+      transparent.classList.remove('transparent--hidden');
 
-      transparent.classList.remove("nav-bar-backdrop-black");
-      transparent.classList.remove("nav-bar-backdrop-white");
+      transparent.classList.remove('nav-bar-backdrop-black');
+      transparent.classList.remove('nav-bar-backdrop-white');
       setZindex(false);
     } else if (lastScroll < currentScroll && currentScroll - lastScroll > 10) {
-      nav.classList.add("nav-bar--hidden");
-      transparent.classList.add("transparent--hidden");
+      nav.classList.add('nav-bar--hidden');
+      transparent.classList.add('transparent--hidden');
     } else if (lastScroll > currentScroll && lastScroll - currentScroll > 5) {
-      nav.classList.remove("nav-bar--hidden");
-      transparent.classList.remove("transparent--hidden");
+      nav.classList.remove('nav-bar--hidden');
+      transparent.classList.remove('transparent--hidden');
       setZindex(true);
       setShadow();
     }
@@ -36,9 +36,9 @@ const NavigationTopbar = ({ theme, toggleTheme}) => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, [lastScroll]);
 
@@ -47,47 +47,47 @@ const NavigationTopbar = ({ theme, toggleTheme}) => {
   }, [theme]);
 
   useEffect(() => {
-    const transparent = document.querySelector(".transparent");
-    transparent.classList.remove("nav-bar-backdrop-black");
-    transparent.classList.remove("nav-bar-backdrop-white");
+    const transparent = document.querySelector('.transparent');
+    transparent.classList.remove('nav-bar-backdrop-black');
+    transparent.classList.remove('nav-bar-backdrop-white');
   }, []);
 
   const setShadow = () => {
-    const transparent = document.querySelector(".transparent");
-    if (theme === "dark") {
-      transparent.classList.remove("nav-bar-backdrop-white");
+    const transparent = document.querySelector('.transparent');
+    if (theme === 'dark') {
+      transparent.classList.remove('nav-bar-backdrop-white');
       window.pageYOffset > 10 &&
-        transparent.classList.add("nav-bar-backdrop-black");
+        transparent.classList.add('nav-bar-backdrop-black');
     } else {
-      transparent.classList.remove("nav-bar-backdrop-black");
+      transparent.classList.remove('nav-bar-backdrop-black');
       window.pageYOffset > 10 &&
-        transparent.classList.add("nav-bar-backdrop-white");
+        transparent.classList.add('nav-bar-backdrop-white');
     }
   };
-  var smallNav = document.querySelector(".small-nav");
-  var smallNavTransparent = document.querySelector(".small-nav-transparent");
+  var smallNav = document.querySelector('.small-nav');
+  var smallNavTransparent = document.querySelector('.small-nav-transparent');
   useEffect(() => {
-    smallNav = document.querySelector(".small-nav");
-    smallNavTransparent = document.querySelector(".small-nav-transparent");
+    smallNav = document.querySelector('.small-nav');
+    smallNavTransparent = document.querySelector('.small-nav-transparent');
   }, []);
   const showSmallNav = () => {
-    smallNav.classList.add("small-nav--show");
-    smallNavTransparent.classList.add("small-nav-transparent--show");
+    smallNav.classList.add('small-nav--show');
+    smallNavTransparent.classList.add('small-nav-transparent--show');
   };
 
   const hideSmallNav = () => {
-    smallNav.classList.remove("small-nav--show");
-    smallNavTransparent.classList.remove("small-nav-transparent--show");
-    console.log("hide");
+    smallNav.classList.remove('small-nav--show');
+    smallNavTransparent.classList.remove('small-nav-transparent--show');
+    console.log('hide');
   };
 
   return (
-    <div className={`topbar ${zindex && "z-10"}`}>
+    <div className={`topbar ${zindex && 'z-10'}`}>
       <div className="transparent"></div>
       <div className="d-flex align-items-center justify-content-between nav-bar">
         <div>
           <img
-            src={theme === "dark" ? logo_white : logo_black}
+            src={theme === 'dark' ? logo_white : logo_black}
             alt="logo"
             className="logo"
             type="button"
@@ -146,9 +146,9 @@ const NavigationTopbar = ({ theme, toggleTheme}) => {
               <i
                 type="button"
                 className={
-                  theme === "dark"
-                    ? "fa-solid fa-sun mode-switch"
-                    : "fa-solid fa-moon mode-switch"
+                  theme === 'dark'
+                    ? 'fa-solid fa-sun mode-switch'
+                    : 'fa-solid fa-moon mode-switch'
                 }
                 onClick={() => toggleTheme()}
               ></i>

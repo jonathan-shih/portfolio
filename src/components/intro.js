@@ -13,19 +13,19 @@ const Intro = ({ theme, toggleTheme }) => {
             website! This website was coded with ReactJS, feel free to scroll
             down or use the links on the top right to learn more about me.
           </h4>
-          <div className={"intro-text sub-text d-flex"}>
+          <div className={'intro-text sub-text d-flex'}>
             <h5>
               Click
               <i
                 type="button"
                 className={`fa-solid mode-switch ${
-                  theme==="dark" ? "fa-sun" : "fa-moon"
+                  theme === 'dark' ? 'fa-sun' : 'fa-moon'
                 }`}
                 onClick={() => toggleTheme()}
-              />{" "}
+              />{' '}
               to view the website in&nbsp;
             </h5>
-            {theme==="dark" ? <h5>light</h5> : <h5>dark</h5>}
+            {theme === 'dark' ? <h5>light</h5> : <h5>dark</h5>}
             <h5>&nbsp;mode!</h5>
           </div>
         </div>

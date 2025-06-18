@@ -1,21 +1,21 @@
-import React from "react";
-import { useEffect } from "react";
-import { Link } from "react-scroll";
+import React from 'react';
+import { useEffect } from 'react';
+import { Link } from 'react-scroll';
 import resume from "../../assets/Jonathan Shih's resume.pdf";
 
 const SideNav = ({ theme, toggleTheme }) => {
-  var smallNav = document.querySelector(".small-nav");
-  var smallNavTransparent = document.querySelector(".small-nav-transparent");
+  var smallNav = document.querySelector('.small-nav');
+  var smallNavTransparent = document.querySelector('.small-nav-transparent');
 
   useEffect(() => {
-    smallNav = document.querySelector(".small-nav");
-    smallNavTransparent = document.querySelector(".small-nav-transparent");
+    smallNav = document.querySelector('.small-nav');
+    smallNavTransparent = document.querySelector('.small-nav-transparent');
   }, []);
 
   const hideSmallNav = () => {
-    smallNav.classList.remove("small-nav--show");
-    smallNavTransparent.classList.remove("small-nav-transparent--show");
-    console.log("hide");
+    smallNav.classList.remove('small-nav--show');
+    smallNavTransparent.classList.remove('small-nav-transparent--show');
+    console.log('hide');
   };
 
   return (
@@ -76,9 +76,9 @@ const SideNav = ({ theme, toggleTheme }) => {
               <i
                 type="button"
                 className={
-                  theme==="dark"
-                    ? "fa-solid fa-sun mode-switch"
-                    : "fa-solid fa-moon mode-switch"
+                  theme === 'dark'
+                    ? 'fa-solid fa-sun mode-switch'
+                    : 'fa-solid fa-moon mode-switch'
                 }
                 onClick={() => {
                   toggleTheme();

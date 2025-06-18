@@ -1,5 +1,5 @@
-import React from "react";
-import { ExperienceDescription } from "./experienceDescription";
+import React from 'react';
+import { ExperienceDescription } from './experienceDescription';
 import resume from "../..//assets/Jonathan Shih's resume.pdf";
 const Experiences = () => {
   return (
@@ -13,7 +13,7 @@ const Experiences = () => {
           </div>
           <div
             className={`${
-              i < ExperienceDescription.length - 1 && "pb-2"
+              i < ExperienceDescription.length - 1 && 'pb-2'
             } col-10 experiences-div`}
           >
             <div>
