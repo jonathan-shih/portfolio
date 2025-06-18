@@ -4,14 +4,15 @@ import '@fortawesome/fontawesome-free/css/all.css';
 import { useEffect, useState } from 'react';
 import { useTheme } from './themeProvider.js';
 import NavigationTopbar from './components/navbar/topnav.js';
-import SideBar from './components/sidebar';
-import Intro from './components/intro';
-import AboutMe from './components/about-me';
-import Experiences from './components/experiences/experiences';
-import Work from './components/projects/projects';
-import Contact from './components/contact';
+import SideBar from './components/sidebar.js';
+import Intro from './components/intro.js';
+import AboutMe from './components/about-me.js';
+import Experiences from './components/experiences/experiences.js';
+import Work from './components/projects/projects.js';
+import Contact from './components/contact.js';
 import Gradient from './components/gradient.js';
 import LogoAnimation from './assets/logoanimation.gif';
+import Projects from './components/projects/projects-new.js';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -52,6 +53,7 @@ function App() {
         <AboutMe />
         <Experiences />
         <Work />
+        <Projects />
         <Contact theme={theme} />
       </div>
       <SideBar />

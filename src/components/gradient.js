@@ -43,8 +43,8 @@ const Gradient = () => {
 
       blobReference.current.style.transform = `
         translate(calc(${currentPosition.current.x}px), calc(${
-        currentPosition.current.y
-      }px))
+          currentPosition.current.y
+        }px))
         rotate(${velocity.current.x + velocity.current.y * 6}deg)
       `;
 
@@ -61,7 +61,7 @@ const Gradient = () => {
   }, []);
 
   return (
-    <div className="background-wrapper">
+    <div className="background-wrapper d-none d-md-block">
       <div id="blob" ref={blobReference}></div>
       <div id="blur"></div>
     </div>

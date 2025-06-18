@@ -208,8 +208,19 @@
   color:white;
 }
 
+.topbar .fa-bars:hover, .small-nav .fa-xmark:hover {
+  color: #4eab6d;
+}
+
 .topbar .nav-link:hover {
   color: #4eab6d;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
+}
+
+.topbar .nav-link-active {
+  color: #4eab6d !important;
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 10px;
@@ -368,7 +379,7 @@
   border-bottom: 0.5px solid;
 }
 
-.experiences-wrapper, .work-wrapper, .projects-wrapper {
+.aboutme-wrapper, .experiences-wrapper, .work-wrapper, .projects-wrapper {
   padding-top: 100px;
 }
 

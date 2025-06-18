@@ -1,23 +1,23 @@
-import image_gui from "../../../assets/cs_project_screenshots/image_gui.png";
+import image_gui from '../../../assets/cs_project_screenshots/image_gui.png';
 
-import { useState, useEffect } from "react";
+import { useEffect } from 'react';
 const ImageProcessing = () => {
-  var trans = document.querySelector(".project-transparent");
-  var gui_image = document.querySelector(".image-gui");
+  var trans = document.querySelector('.project-transparent');
+  var gui_image = document.querySelector('.image-gui');
 
   useEffect(() => {
-    trans = document.querySelector(".project-transparent");
-    gui_image = document.querySelector(".image-gui");
+    trans = document.querySelector('.project-transparent');
+    gui_image = document.querySelector('.image-gui');
   }, []);
 
   const focusImage = () => {
-    trans.classList.add("project-transparent--show");
-    gui_image.classList.add("project-img-fullscreen-div--show");
+    trans.classList.add('project-transparent--show');
+    gui_image.classList.add('project-img-fullscreen-div--show');
   };
 
   const unFocusImage = () => {
-    trans.classList.remove("project-transparent--show");
-    gui_image.classList.remove("project-img-fullscreen-div--show");
+    trans.classList.remove('project-transparent--show');
+    gui_image.classList.remove('project-img-fullscreen-div--show');
   };
 
   return (
@@ -50,7 +50,7 @@ const ImageProcessing = () => {
             <br></br>
             <span className="h5">
               Filters are a implemented through RGB manipulation, which are
-              applied through the usages of{" "}
+              applied through the usages of{' '}
               <span className="green"> matrixes and kernels</span>. The tool is
               able to read and reformat images, allowing users to upload and
               export images in their preferred format (.ppm, .jpg/jpeg, .png).

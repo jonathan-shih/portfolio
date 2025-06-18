@@ -33,9 +33,9 @@ const SideNav = ({ theme, toggleTheme }) => {
                 to="aboutme-div"
                 spy={true}
                 smooth={true}
-                offset={-200}
                 duration={100}
                 className="nav-link"
+                activeClass="nav-link-active"
                 onClick={() => hideSmallNav()}
               >
                 About Me
@@ -46,9 +46,9 @@ const SideNav = ({ theme, toggleTheme }) => {
                 to="experiences-div"
                 spy={true}
                 smooth={true}
-                offset={-200}
                 duration={100}
                 className="nav-link"
+                activeClass="nav-link-active"
                 onClick={() => hideSmallNav()}
               >
                 Experiences
@@ -59,9 +59,9 @@ const SideNav = ({ theme, toggleTheme }) => {
                 to="projects-div"
                 spy={true}
                 smooth={true}
-                offset={-200}
                 duration={100}
                 className="nav-link"
+                activeClass="nav-link-active"
                 onClick={() => hideSmallNav()}
               >
                 Projects

@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import ProgrammingProjects from "./programmingProjects";
-import DesignProjects from "./designProjects";
+import React, { useState } from 'react';
+import ProgrammingProjects from './programmingProjects.js';
+import DesignProjects from './designProjects.js';
 
 const Work = () => {
-  const [active, setActive] = useState("programming");
+  const [active, setActive] = useState('programming');
   return (
     <div className="projects-wrapper">
       <div className="projects-div d-flex flex-column align-items-start">
@@ -11,24 +11,24 @@ const Work = () => {
         <div className="d-flex select">
           <li
             className={`${
-              active === "programming" ? "list-item-active" : "list-item"
+              active === 'programming' ? 'list-item-active' : 'list-item'
             }`}
             type="button"
-            onClick={() => setActive("programming")}
+            onClick={() => setActive('programming')}
           >
             <h5>Programming</h5>
           </li>
           <li
             className={`${
-              active === "design" ? "list-item-active" : "list-item"
+              active === 'design' ? 'list-item-active' : 'list-item'
             }`}
             type="button"
-            onClick={() => setActive("design")}
+            onClick={() => setActive('design')}
           >
             <h5>Design</h5>
           </li>
         </div>
-        {active === "programming" ? (
+        {active === 'programming' ? (
           <ProgrammingProjects />
         ) : (
           <DesignProjects />

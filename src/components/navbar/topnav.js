@@ -75,12 +75,6 @@ const NavigationTopbar = ({ theme, toggleTheme }) => {
     smallNavTransparent.classList.add('small-nav-transparent--show');
   };
 
-  const hideSmallNav = () => {
-    smallNav.classList.remove('small-nav--show');
-    smallNavTransparent.classList.remove('small-nav-transparent--show');
-    console.log('hide');
-  };
-
   return (
     <div className={`topbar ${zindex && 'z-10'}`}>
       <div className="transparent"></div>
@@ -102,36 +96,36 @@ const NavigationTopbar = ({ theme, toggleTheme }) => {
         <ul className="nav d-none d-md-flex h6">
           <li className="nav-item" type="button">
             <Link
-              to="aboutme-div"
+              to="aboutme-wrapper"
               spy={true}
               smooth={true}
-              offset={-200}
               duration={100}
               className="nav-link"
+              activeClass="nav-link-active"
             >
               About Me
             </Link>
           </li>
           <li className="nav-item" type="button">
             <Link
-              to="experiences-div"
+              to="experiences-wrapper"
               spy={true}
               smooth={true}
-              offset={-200}
               duration={100}
               className="nav-link"
+              activeClass="nav-link-active"
             >
               Experiences
             </Link>
           </li>
           <li className="nav-item" type="button">
             <Link
-              to="projects-div"
+              to="projects-wrapper"
               spy={true}
               smooth={true}
-              offset={-200}
               duration={100}
               className="nav-link"
+              activeClass="nav-link-active"
             >
               Projects
             </Link>

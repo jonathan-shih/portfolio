@@ -2,7 +2,7 @@ import profile_img from '../assets/profile_img.jpg';
 
 const AboutMe = () => {
   return (
-    <div>
+    <div className="aboutme-wrapper">
       <div className="aboutme-div d-flex flex-column-reverse flex-md-row">
         <div className="aboutme-text-div d-flex flex-column align-items-start">
           <h3 className="sub-text section-header"> About Me </h3>
