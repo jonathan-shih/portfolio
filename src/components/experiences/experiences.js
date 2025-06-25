@@ -1,6 +1,6 @@
 import React from 'react';
 import { ExperienceDescription } from './experienceDescription.js';
-import resume from '../..//assets/Jonathan_Shih_resume.pdf';
+import resume from '../../assets/Jonathan_Shih_resume.pdf';
 
 const Experiences = () => {
   return (

@@ -1,0 +1,154 @@
+.projects-wrapper {
+  position: relative;
+}
+
+.project-card {
+  position: relative;
+  width: 300px;
+  height: 385px;
+  /* border: 1px solid #9e959566; */
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin: 10px;
+  /* overflow: hidden; */
+  /* border-top: 5px solid #4eab6d; */
+  z-index: 1;
+  display: flex;
+  transition: transform 1s;
+  will-change: transform;
+  background-position: 50% 50%;
+  background-size: cover;
+  transform: translateZ(0) scale(1); /* GPU snap */
+  backface-visibility: hidden;
+  outline: 1px solid transparent; /* Hidden edge fix */
+}
+
+.dark .project-card {
+  background-color: #121212;
+}
+
+.project-info {
+  height: 50%;
+  padding: 0px 20px;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.project-info-animation {
+  animation: fade-in 2.5s 1;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    backdrop-filter: blur(0px);
+  }
+  100% {
+    opacity: 1;
+    backdrop-filter: blur(8px);
+  }
+}
+
+.project-card:hover {
+  transform: translate(-10px, -10px);
+}
+
+
+.project-card-pop {
+  animation: pop 2s;
+}
+
+@keyframes pop{
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-10px, -10px);
+  }
+
+}
+
+.tech-tag {
+  background-color: #4eab6d25;
+  color:#4eab6d;
+  border-radius: 10px;
+  padding: 3px 10px;
+  margin: 5px;
+  /* border:2px solid #4eab6d; */
+}
+
+.tech-tag-wrapper {
+  margin-left: -10px;
+  position: absolute;
+  top: 60%;
+}
+
+.project-highlight {
+  position: absolute;
+  height: 385px;
+  width: 300px;
+  border:2px solid #4eab6d;
+  border-radius: 5px;
+  margin: 10px;
+  z-index: 0;
+}
+
+.project-shade {
+  position: absolute;
+  width: calc(100% + 1px);
+  height: calc(100% + 1px);
+  margin-left: -0.5px;
+  margin-top: -0.5px;
+  background: linear-gradient(#ffffff90,#ffffff);
+  mask-image: linear-gradient(to bottom, 
+    transparent 0%,
+    rgba(255, 255, 255, 0.8) 30%,
+    white 50%
+  );
+  border-radius: 5px;
+  z-index: 2;
+  backdrop-filter:blur(8px);
+  isolation: isolate;
+}
+
+
+
+.dark .project-shade {
+  background: linear-gradient(#00000090,#000000);
+  mask-image: linear-gradient(to bottom, 
+    transparent 0%,
+    rgba(0, 0, 0, 0.8) 30%,
+    black 50%
+  );
+}
+
+.project-image {
+  display: block;
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.project-name {
+  padding-bottom: 4px;
+}
+
+.header-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.header-wrapper .select {
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+

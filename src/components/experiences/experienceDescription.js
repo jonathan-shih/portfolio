@@ -30,7 +30,7 @@ export const ExperienceDescription = [
     desc: 'Worked with internal business users to refine website catalog catagorization and built a python bulk upload CRUD app',
   },
   {
-    fullName: 'C!ub (Student Club Mobile App Startup)',
+    fullName: 'C!ub (Student Club Mobile App)',
     role: 'Software Engineer & Designer',
     date: '2020 - 2022',
     desc: 'Created marketing material and developed first iOS MVP for a student led mobile startup to create a platform for clubs to communicate and manage their memebers',

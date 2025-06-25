@@ -12,7 +12,7 @@ const Contact = ({ theme }) => {
         </div>
         <div className="line"></div>
       </div>
-      <div className="d-flex contact-info justify-content-center d-md-none">
+      <div className="d-flex contact-info justify-content-center d-md-none h5">
         <a
           href="https://www.linkedin.com/in/jonathan-shih/"
           target="_blank"
@@ -27,7 +27,14 @@ const Contact = ({ theme }) => {
         >
           <i className="fa-brands fa-github"></i>
         </a>
-        <h6> shih.jo@northeastern.edu </h6>
+        <a
+          href="mailto:shih.jo@northeastern.edu"
+          target="_blank"
+          className="link-icon"
+          style={{ textDecoration: 'none' }}
+        >
+          <h6> shih.jo@northeastern.edu </h6>
+        </a>
       </div>
       <img
         className="logo"

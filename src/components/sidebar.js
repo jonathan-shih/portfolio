@@ -17,7 +17,17 @@ const SideBar = () => {
           <i className="fa-brands fa-github"></i>
         </a>
       </div>
-      <div className="email"> shih.jo@northeastern.edu </div>
+      <div className="email">
+        {' '}
+        <a
+          href="mailto:shih.jo@northeastern.edu"
+          target="_blank"
+          className="link-icon"
+          style={{ textDecoration: 'none' }}
+        >
+          shih.jo@northeastern.edu
+        </a>
+      </div>
       <div className="vl"></div>
     </div>
   );

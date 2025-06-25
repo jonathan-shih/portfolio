@@ -1,6 +1,23 @@
+import { useEffect } from 'react';
 import profile_img from '../assets/profile_img.jpg';
 
 const AboutMe = () => {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const profileImg = entry.target.querySelector('.profile-img');
+        if (entry.isIntersecting) {
+          profileImg.classList.add('profile-img-animation');
+          console.log('trigger');
+          return;
+        }
+        profileImg.classList.remove('profile-img-animation');
+      });
+    });
+
+    observer.observe(document.querySelector('.profile-div'));
+  }, []);
+
   return (
     <div className="aboutme-wrapper">
       <div className="aboutme-div d-flex flex-column-reverse flex-md-row">
@@ -19,10 +36,10 @@ const AboutMe = () => {
             designed code as well as visually appealing interfaces and designs.
           </h5>
           <h5 className="aboutme-text">
-            Having lived in Hong Kong, China and the US, I have a distinct
-            cultural perspective that allows me to effectively communicate and
-            flourish in all kinds of environments, making me a great team
-            player. I am adaptable and passionate, and always excited to learn!
+            Though my distinct experiences, I have carfeully honed my skills,
+            allowing me to effectively communicate and flourish in all kinds of
+            environments, making me a great team player. I am adaptable,
+            determined, and always excited to learn!
           </h5>
         </div>
         <div className="profile-div">

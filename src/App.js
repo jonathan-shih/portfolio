@@ -8,10 +8,10 @@ import SideBar from './components/sidebar.js';
 import Intro from './components/intro.js';
 import AboutMe from './components/about-me.js';
 import Experiences from './components/experiences/experiences.js';
-import Work from './components/projects/projects.js';
 import Contact from './components/contact.js';
 import Gradient from './components/gradient.js';
 import LogoAnimation from './assets/logoanimation.gif';
+import Projects from './components/projects/projects-new.js';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -51,7 +51,7 @@ function App() {
         <Intro theme={theme} toggleTheme={toggleTheme} />
         <AboutMe />
         <Experiences />
-        <Work />
+        <Projects />
         <Contact theme={theme} />
       </div>
       <SideBar />

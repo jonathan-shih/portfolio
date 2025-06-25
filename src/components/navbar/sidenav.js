@@ -20,7 +20,7 @@ const SideNav = ({ theme, toggleTheme }) => {
 
   return (
     <div>
-      <div className="small-nav d-md-none flex-column align-items-end">
+      <div className="small-nav d-md-none flex-column">
         <div className="small-nav-wrapper">
           <ul className="h5">
             <i
@@ -87,6 +87,29 @@ const SideNav = ({ theme, toggleTheme }) => {
               ></i>
             </li>
           </ul>
+          <div className="d-flex small-nav-contact">
+            <a
+              href="https://www.linkedin.com/in/jonathan-shih/"
+              target="_blank"
+              className="link-icon pe-3 h5"
+            >
+              <i className="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://github.com/Jonathan-Shih"
+              target="_blank"
+              className="link-icon pe-3 h5"
+            >
+              <i className="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="mailto:shih.jo@northeastern.edu"
+              target="_blank"
+              className="link-icon h5"
+            >
+              <i className="fa-solid fa-envelope"></i>
+            </a>
+          </div>
         </div>
       </div>
       <div
