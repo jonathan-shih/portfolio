@@ -30,7 +30,7 @@ const AboutMe = () => {
             Developement and UI/UX Design.
           </h5>
           <h5 className="aboutme-text">
-            As an interdiciplinary student who stuided computer science and
+            As an interdiciplinary student who studied computer science and
             design, I am able to leverage both logical and creative approaches
             when solving problems. I strive to create clean and cleverly
             designed code as well as visually appealing interfaces and designs.
